@@ -26,6 +26,7 @@ const config = {
       /** @type {import('@acid-info/logos-docusaurus-preset').PluginOptions} */
       ({
         businessUnit: 'Codex',
+        contactInfo: 'team.json',
         theme: {
           name: 'default',
           options: {
