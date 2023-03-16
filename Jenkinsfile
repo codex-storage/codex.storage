@@ -14,7 +14,7 @@ pipeline {
     GIT_COMMITTER_NAME = 'status-im-auto'
     GIT_COMMITTER_EMAIL = 'auto@status.im'
     /* dev page settings */
-    DEV_SITE = 'codex.storage'
+    DEV_SITE = 'dev.codex.storage'
     DEV_HOST = 'jenkins@node-01.do-ams3.sites.misc.statusim.net'
     SCP_OPTS = 'StrictHostKeyChecking=no'
   }
