@@ -19,20 +19,14 @@ $ yarn
 $ yarn start
 ```
 
-## Deployment
-1. Clone this repository.
-2. Install the dependencies:
-```bash
-$ yarn
-```
-3. Build the website:
-```bash
-$ yarn build
-```
-4. serve the app:
-```bash
-$ yarn serve
-```
+## Continuous Integration
+
+Two branches are built by [our Jenkins instance](https://ci.infra.status.im/):
+
+* `master` branch is deployed to https://codex.storage by [CI](https://ci.infra.status.im/job/website/job/codex.storage/).
+* `develop` branch is deployed to https://dev.codex.storage by [CI](https://ci.infra.status.im/job/website/job/dev.codex.storage/).
+
+PRs should be made for `develop` branch and `master` should be [rebased](https://git-scm.com/book/en/v2/Git-Branching-Rebasing) on `develop` once changes are verified.
 
 ## Configuration
 Edit the `docusaurus.config.js` file in the repository's root directory, and update the value of the `businessUnit` field in presets section; below is a list of valid values:
