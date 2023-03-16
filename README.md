@@ -19,6 +19,21 @@ $ yarn
 $ yarn start
 ```
 
+## Deployment
+1. Clone this repository.
+2. Install the dependencies:
+```bash
+$ yarn
+```
+3. Build the website:
+```bash
+$ yarn build
+```
+4. serve the app:
+```bash
+$ yarn serve
+```
+
 ## Configuration
 Edit the `docusaurus.config.js` file in the repository's root directory, and update the value of the `businessUnit` field in presets section; below is a list of valid values:
 - Codex
