@@ -13,6 +13,8 @@ pipeline {
   environment {
     GIT_COMMITTER_NAME = 'status-im-auto'
     GIT_COMMITTER_EMAIL = 'auto@status.im'
+    /* This key is not a secret. */
+    GHOST_API_KEY = 'dc7884e3d2c10dde2269926b20'
     PROD_SITE = 'codex.storage'
     DEV_SITE  = 'dev.codex.storage'
     DEV_HOST  = 'jenkins@node-01.do-ams3.sites.misc.statusim.net'
