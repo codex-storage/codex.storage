@@ -73,10 +73,6 @@ const config = {
             label: 'Github',
             href: 'https://github.com/codex-storage',
           },
-          {
-            type: 'localeDropdown',
-            position: 'right',
-          },
         ],
       },
       footer: {
