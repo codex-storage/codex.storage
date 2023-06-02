@@ -32,11 +32,11 @@ const config = {
           name: 'default',
           options: {
             customCss: [require.resolve('./src/css/custom.scss')],
-          },
-          docs: {
-            default: {
-              sidebar: {
-                hide: false,
+            docs: {
+              default: {
+                sidebar: {
+                  hide: false,
+                },
               },
             },
           },
