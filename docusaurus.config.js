@@ -8,9 +8,8 @@ const config = {
   url: 'https://codex.storage/',
   baseUrl: '/',
 
-  customFields: {
-    ghostAPiKey: process.env.GHOST_API_KEY,
-  },
+  customFields: {},
+
   markdown: {
     mermaid: true,
   },
@@ -33,6 +32,13 @@ const config = {
           name: 'default',
           options: {
             customCss: [require.resolve('./src/css/custom.scss')],
+          },
+          docs: {
+            default: {
+              sidebar: {
+                hide: false,
+              },
+            },
           },
         },
         docs: {
@@ -58,11 +64,8 @@ const config = {
   themeConfig:
     /** @type {import('@acid-info/logos-docusaurus-preset').ThemeConfig} */
     ({
-      colorMode: {
-        defaultMode: 'dark',
-        disableSwitch: false,
-      },
       navbar: {
+        hideOnScroll: true,
         items: [
           {
             type: 'search',
