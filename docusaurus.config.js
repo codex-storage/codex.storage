@@ -5,7 +5,7 @@ require('dotenv').config()
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Codex',
-  url: 'https://url',
+  url: 'https://codex.storage/',
   baseUrl: '/',
 
   customFields: {
@@ -36,18 +36,24 @@ const config = {
           },
         },
         docs: {
-          routeBasePath: '/about',
-          versions: {
-            current: {
-              label: 'current',
-            },
-          },
-          lastVersion: 'current',
+          routeBasePath: '/',
+          path: 'root-pages',
         },
       }),
     ],
   ],
   themes: ['@docusaurus/theme-mermaid'],
+
+  plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'about',
+        routeBasePath: '/about',
+        path: 'about',
+      },
+    ],
+  ],
 
   themeConfig:
     /** @type {import('@acid-info/logos-docusaurus-preset').ThemeConfig} */
@@ -77,7 +83,7 @@ const config = {
           {
             items: [
               {
-                href: '/',
+                href: 'https://twitter.com/Codex_storage',
                 label: 'Twitter',
               },
               {
@@ -105,11 +111,7 @@ const config = {
                 label: 'Work with us',
               },
               {
-                href: '/',
-                label: 'Privacy policy',
-              },
-              {
-                href: '/',
+                href: '/terms',
                 label: 'Terms & conditions',
               },
             ],
