@@ -66,10 +66,6 @@ const config = {
             to: '/about',
           },
           {
-            label: 'Blog',
-            href: '/',
-          },
-          {
             label: 'Github',
             href: 'https://github.com/codex-storage',
           },
@@ -114,7 +110,7 @@ const config = {
               },
               {
                 href: '/',
-                label: 'Temrs & conditions',
+                label: 'Terms & conditions',
               },
             ],
           },
