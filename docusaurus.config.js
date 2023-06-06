@@ -75,6 +75,10 @@ const config = {
             to: '/about',
           },
           {
+            label: 'Docs',
+            to: 'https://docs.codex.storage'
+          },
+          {
             label: 'Github',
             href: 'https://github.com/codex-storage',
           },
