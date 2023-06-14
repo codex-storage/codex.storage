@@ -76,7 +76,7 @@ const config = {
           },
           {
             label: 'Docs',
-            to: 'https://docs.codex.storage'
+            to: 'https://docs.codex.storage',
           },
           {
             label: 'Github',
@@ -98,7 +98,7 @@ const config = {
                 label: 'Discord',
               },
               {
-                href: '/',
+                href: 'https://docs.codex.storage/',
                 label: 'Docs',
               },
               {
@@ -109,10 +109,6 @@ const config = {
           },
           {
             items: [
-              {
-                href: '/',
-                label: 'Contact us',
-              },
               {
                 href: 'https://jobs.status.im/',
                 label: 'Work with us',
