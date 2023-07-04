@@ -2,22 +2,24 @@ import {
   Hero,
   HeroTitle,
   HeroDescription,
+  HeroVideo,
   HeroActions,
   HeroAction,
   CallToActionSection,
   CallToActionButton,
   FeatureList,
   Showcase,
-  HeroModel,
   HeroInfo,
   Box,
 } from '../components/mdx'
 
 <Hero size="large">
   <HeroInfo>
-    <HeroTitle>Durable, decentralized data storage</HeroTitle>
+    <HeroTitle>
+      {'Defend Against Data Censorship With Codex'}
+    </HeroTitle>
     <HeroDescription>
-      Codex provides immutable, censorship-resistant data storage via a censorship-resistant, permissionless and incentivized P2P network
+      {'Codex is a durable, decentralized data storage protocol, created so the world community can preserve its most important knowledge without risk of censorship.'} 
     </HeroDescription>
     <HeroActions>
       <HeroAction href="https://twitter.com/Codex_storage" target="_blank">
@@ -25,15 +27,12 @@ import {
       </HeroAction>
     </HeroActions>
   </HeroInfo>
-  <HeroModel
-    modelId={'architecture05'}
-    mode={'abstract'}
-    rotateSpeed={0.04}
-    startY={'bottom'}
-    asciiConfig={{
-      characters: ' + ^ ^%%%0 -a @@@ ###',
-    }}
-  />
+  <HeroVideo
+    placeholderSrc="/hero/atlas02-1080x1080-placeholder.png"
+  >
+    <source src="/hero/atlas02-2048x2048-24fps-1M.mov" type='video/mp4; codecs="hvc1"' />
+    <source src="/hero/atlas02-2048x2048-24fps-1M.webm" type="video/webm" />  
+  </HeroVideo>
 </Hero>
 
 <FeatureList
