@@ -45,6 +45,7 @@ const config = {
           routeBasePath: '/',
           path: 'root-pages',
         },
+        og: {},
       }),
     ],
   ],
