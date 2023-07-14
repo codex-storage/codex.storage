@@ -3,9 +3,9 @@ title: Description and architecture
 sidebar_position: 2
 ---
 
-Codex is building a durable data storage engine that is fully decentralized, providing corruption and censorship resistance to web3 applications. It innately protects network participants by giving hosts plausible deniability over the data they store, and clients provable durability guarantees—up to 99.999999999%—while remaining storage and bandwidth efficient.
+Codex is building a durable data storage engine that is fully decentralised, providing corruption and censorship resistance to web3 applications. It innately protects network participants by giving hosts plausible deniability over the data they store, and clients provable durability guarantees—up to 99.999999999%—while remaining storage and bandwidth efficient.
 
-These four key features combine to differentiate Codex from existing projects in the decentralized storage niche:
+These four key features combine to differentiate Codex from existing projects in the decentralised storage niche:
 
 - **Erasure coding:** Provides efficient data redundancy, which increases data durability guarantees.
 
@@ -13,11 +13,11 @@ These four key features combine to differentiate Codex from existing projects in
 
 - **Lazy repair mechanism:** For efficient data reconstruction and loss prevention.
 
-- **Incentivization:**  To encourage rational behavior, widespread network participation, and the efficient provision of finite network resources.
+- **Incentivization:**  To encourage rational behaviour, widespread network participation, and the efficient provision of finite network resources.
 
 <br />
 
-### Incentivized decentralization
+### Incentivized decentralisation
 
 Incentivization mechanisms are one of the key pieces missing from traditional file-sharing networks. Codex believes that a robust marketplace-based incentive structure will ensure wide participation across the node types detailed below.
 
@@ -25,11 +25,11 @@ The development of an adequate incentive structure is driven by the following go
 
 - Supply and demand to encourage optimum network resource usage.
 
-- Increase participation by enabling nodes to utilize their competitive advantages to maximize profits.
+- Increase participation by enabling nodes to utilise their competitive advantages to maximise profits.
 
 - Prevent spam and discourage malicious participation. 
 
-Although still to be finalized, the Codex incentive structure will involve a marketplace of participants who want to store data, and those provisioning storage posting collateral, with the latter bidding on open storage contracts. This structure aims to ensure that participants' incentives align, resulting in Codex functioning as intended.
+Although still to be finalised, the Codex incentive structure will involve a marketplace of participants who want to store data, and those provisioning storage posting collateral, with the latter bidding on open storage contracts. This structure aims to ensure that participants' incentives align, resulting in Codex functioning as intended.
 
 <br />
 
