@@ -45,7 +45,7 @@ The Codex team's subgroups are working on the major milestones detailed below to
 
 ### Roadmap rationale
 
-We believe the above roadmap to be the most logical approach to building a data storage engine with stronger durability guarantees and resistance to censorship than currently offered by Codex's centralized or decentralized counterparts. 
+We believe the above roadmap to be the most logical approach to building a data storage engine with stronger durability guarantees and resistance to censorship than currently offered by Codex's centralised or decentralised counterparts. 
 
 First, we must establish a mechanism through which users can initiate a contract with a storage provider to host their data. Then, we can add erasure coding, required for efficient redundancy and auditing. Next, the system will need a mechanism to prove the hosts still have data available. Finally, repairs must be incentivized. Naturally, each layer of sophistication requires testing for economic and technical feasibility.
 
