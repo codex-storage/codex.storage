@@ -79,6 +79,10 @@ const config = {
             to: 'https://docs.codex.storage',
           },
           {
+            label: 'Blog',
+            href: 'https://blog.codex.storage',
+          },
+          {
             label: 'Github',
             href: 'https://github.com/codex-storage',
           },
@@ -98,8 +102,12 @@ const config = {
                 label: 'Discord',
               },
               {
-                href: 'https://docs.codex.storage/',
+                href: 'https://docs.codex.storage',
                 label: 'Docs',
+              },
+              {
+                href: 'https://blog.codex.storage',
+                label: 'Blog',
               },
               {
                 href: 'https://github.com/codex-storage',
