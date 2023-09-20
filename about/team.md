@@ -1,6 +1,7 @@
 ---
 title: Core contributors
 sidebar_position: 4
+hide_table_of_contents: true
 ---
 
 Codex is developed by highly experienced protocol and software developers, distributed systems experts, and ZK-cryptography researchers with backgrounds in academia, mainstream tech, and web3. 

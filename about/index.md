@@ -1,6 +1,7 @@
 ---
 title: About
 sidebar_position: 1
+hide_table_of_contents: true
 ---
 
 Codex is a decentralised data storage platform that provides exceptionally strong censorship resistance and durability guarantees. It serves as the storage layer of the [Logos](https://logos.co/) tech stack. Alongside the trustless agreement layer, [Nomos](http://nomos.tech), and the communications layer, [Waku](http://waku.org), it is one of the Logos Collective's foundational projects.
