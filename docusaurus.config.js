@@ -42,6 +42,7 @@ const config = {
           },
         },
         docs: {
+          breadcrumbs: false, // TODO: not working
           routeBasePath: '/',
           path: 'root-pages',
         },
@@ -60,7 +61,6 @@ const config = {
       },
     ],
   ],
-
   themeConfig:
     /** @type {import('@acid-info/logos-docusaurus-preset').ThemeConfig} */
     ({
@@ -71,20 +71,26 @@ const config = {
             type: 'search',
           },
           {
-            label: 'About',
+            label: 'About Codex',
             to: '/about',
           },
           {
+            label: 'Community',
+            to: '/community',
+          },
+          {
+            title: 'Codex GitHub repository',
+            href: 'https://github.com/codex-storage',
+            position: 'right',
+            className: 'header-github-link',
+          },
+          {
             label: 'Docs',
-            to: 'https://docs.codex.storage',
+            href: 'https://docs.codex.storage',
           },
           {
             label: 'Blog',
             href: 'https://blog.codex.storage',
-          },
-          {
-            label: 'Github',
-            href: 'https://github.com/codex-storage',
           },
         ],
       },
