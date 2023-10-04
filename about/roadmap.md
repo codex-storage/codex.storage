@@ -12,8 +12,6 @@ Codex is currently in its first proof of concept iteration, codenamed Dagger. Be
 
 - **Scimitar:** The PoC-2 client will implement fast erasure coding, the marketplace, and partial durability guarantees—expected end of Q3 2023.
 
-- **Longsword:** Codex PoC-3 will improve upon SNARK-based remote auditing mechanism and add bandwidth incentives to the marketplace—expected end of Q3 2023.
-
 - **Katana:** Codex v1 will offer SNARK-based remote auditing
 
 <br/>

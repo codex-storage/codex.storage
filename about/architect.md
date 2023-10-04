@@ -42,15 +42,15 @@ Codex is composed of multiple node types, each taking a different role in the ne
 
 As Codex's long-term reliable storage providers, storage nodes stake collateral based on the collateral posted on the request side of contracts, and the number of slots that a contract has. This is tied to the durability demanded by the user. Failure to provide periodic proof of data possession results in slashing penalties.
 
-**Caching nodes**
+**Aggregator**
 
-Anyone can contribute to Codex as an ephemeral node by caching and serving popular content without requiring reliable or abundant storage. These caching nodes act to scale the network during periods of high demand.
+A method for off-loading erasure coding and proof generation and proof aggregation by a client node with low-resources, currently a WIP and will be part of subsequent Codex release Q2/Q4 next year.
 
 **Client nodes**
 
 Client nodes make requests for other nodes to store, find, and retrieve data. Most of the Codex network will be Client nodes, and these participants can double as caching nodes to offset the cost of the network resources they consume. 
 
-When a node commits to a storage contract and a user uploads data, the network will proactively verify that the storage node is online and that the data is retrievable. Storage nodes then broadcast proofs of data possession over random intervals. 
+When a node commits to a storage contract and a user uploads data, the network will proactively verify that the storage node is online and that the data is retrievable. Storage nodes are then randomly queried to broadcast proofs of data possession over an interval corresponding to the contract duration and 9's of retrievability guarantee the protocol provides.
 
 If the storage node sends invalid proofs or fails to provide them in time, the network evicts the storage node from the slot, and the slot will become available for the first node that generates a valid proof for that slot. 
 
