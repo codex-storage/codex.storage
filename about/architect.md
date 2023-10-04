@@ -4,7 +4,7 @@ sidebar_position: 2
 hide_table_of_contents: true
 ---
 
-Codex is building a durable data storage engine that is fully decentralised, providing corruption and censorship resistance to web3 applications. It innately protects network participants by giving hosts plausible deniability over the data they store, and clients provable durability guarantees—up to 99.999999999%—while remaining storage and bandwidth efficient.
+Codex is building a durable data storage engine that is fully decentralised, providing corruption and censorship resistance to web3 applications. It innately protects network participants by giving hosts plausible deniability over the data they store, and clients provable durability guarantees—up to 99.99%—while remaining storage and bandwidth efficient.
 
 These four key features combine to differentiate Codex from existing projects in the decentralised storage niche:
 

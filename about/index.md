@@ -32,7 +32,7 @@ Existing decentralised storage solutions purport to improve upon early P2P file-
 
 Codex began in 2021 to address a need for a durable, decentralised storage layer for the web3 tech stack.
 
-The name "Codex" refers to an ancient form of book—an allusion to the data storage engine's extremely robust—99.999999999%—durability guarantees.
+The name "Codex" refers to an ancient form of book—an allusion to the data storage engine's extremely robust—99.99%—durability guarantees.
 
 Codex was announced as a core Logos Collective protocol in June 2023.
 
