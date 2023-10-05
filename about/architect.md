@@ -42,9 +42,9 @@ Codex is composed of multiple node types, each taking a different role in the ne
 
 As Codex's long-term reliable storage providers, storage nodes stake collateral based on the collateral posted on the request side of contracts, and the number of slots that a contract has. This is tied to the durability demanded by the user. Failure to provide periodic proof of data possession results in slashing penalties.
 
-**Aggregator**
+**Aggregator Node**
 
-A method for off-loading erasure coding and proof generation and proof aggregation by a client node with low-resources, currently a WIP and will be part of subsequent Codex release Q2/Q4 next year.
+A method for off-loading erasure coding, proof generation and proof aggregation by a client node with low-resources, currently a WIP and will be part of subsequent Codex release Q2/Q4 next year.
 
 **Client nodes**
 
