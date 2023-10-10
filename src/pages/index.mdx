@@ -16,8 +16,9 @@ import {
   Showcase,
   HeroInfo,
   Box,
-  Roadmap,
-  ProfileCards,
+  Grid,
+  ProfileCard,
+  TimelineItem,
 } from '../components/mdx'
 
 <Hero size="large">
@@ -94,131 +95,195 @@ import {
 </Box>
 
 <Box top={{ xs: 144, lg: 216 }}>
-  <Roadmap
+  <SectionHeader
     title="Development Roadmap"
     description="Codex is currently in its first proof-of-concept iteration and aims to release its alpha version, Katana, before the end of Q4 2023."
-    alignment="top"
-    timeline={[
-      {
-        period: '2021',
-        borderStyle: 'solid',
-        description: "Codex project begins",
-      },
-      {
-        period: '2021',
-        borderStyle: 'solid',
-        description: "Work on first Client prototype built from Bitswap, IPFS and Nitro",
-      },
-      {
-        period: '2021',
-        borderStyle: 'solid',
-        description: "Begin primitive Marketplace v1.0 interactions for pricing block exchanging",
-      },
-      {
-        period: '2021',
-        borderStyle: 'solid',
-        description: "Research begins for remote verification and erasure coding methods",
-      },
-      {
-        period: '2021',
-        borderStyle: 'solid',
-        description: "Research of Marketplace mechanics in other decentralized storage protocols",
-      },
-      {
-        period: '2021',
-        borderStyle: 'solid',
-        description: "PoR and erasure coding modeling and prototyping",
-      },
-      {
-        period: '2022',
-        borderStyle: 'solid',
-        description: ' Implementation of PoR and erasure coding into Codex client',
-      },
-      {
-        period: '2022',
-        borderStyle: 'solid',
-        description: ' Added first implementation of DHT and discovery v5 methods',
-      },
-      {
-        period: '2022',
-        borderStyle: 'solid',
-        description: 'REST APIs added to Marketplace for Sales Availability',
-      },
-      {
-        period: '2022',
-        borderStyle: 'solid',
-        description: 'Demo of first proof of concept Codex client: PoC-1 (Dagger)',
-      },
-      {
-        period: '2022',
-        borderStyle: 'solid',
-        description: 'Marketplace v2.0 redesign',
-      },
-      {
-        period: '2022',
-        borderStyle: 'solid',
-        description: 'Research into zkSNARK-based methods of proof aggregation to replace PoR',
-      },
-      {
-        period: '2022',
-        borderStyle: 'solid',
-        description: 'Marketplace v2.0 redesign',
-      },
-      {
-        period: '2023',
-        borderStyle: 'solid',
-        description: 'Demo of Codex client PoC-2 (Scimitar)',
-      },
-      {
-        period: '2023',
-        borderStyle: 'solid',
-        description: 'Research into L2s, systems testing and integration of Marketplace into Client',
-      },
-      {
-        period: '2023',
-        borderStyle: 'solid',
-        description: 'Demo of third proof of concept Codex client PoC-3 (Longsword): fast erasure coding, Marketplace, ZK remote auditing',
-      },
-      {
-        period: '2023',
-        borderStyle: 'solid',
-        description: 'Codex MVP Version 1.0 (Katana): fast erasure coding, Marketplace, ZK remote auditing, repair',
-      },
-      {
-        period: '2024',
-        borderStyle: 'solid',
-        description: 'Develop Codex L2 aggregator node architecture',
-      },
-      {
-        period: '2024',
-        borderStyle: 'solid',
-        description: 'Research into payment channels and bandwidth incentives',
-      },
-      {
-        period: '2024',
-        borderStyle: 'solid',
-        description: 'Implementation of incentives: payment channels, bandwidth incentives',
-      },
-      {
-        period: '2024',
-        borderStyle: 'solid',
-        description: 'Enable repair using remote auditing scheme and incentive mechanisms',
-      },
-      {
-        period: '2025',
-        description: 'Codex Version 2.0 (Wakizashi)',
-      },
-      {
-        period: '2025',
-        description: 'Public mainnet launch',
-      },
-      {
-        period: '2025',
-        description: 'Multi-client implementations in Rusn and Go',
-      },
-    ]}
-  >
-  </Roadmap>
+    bottom={{ xs: "4rem", lg: "7.25rem" }}
+  />
+  <Grid xs={{ cols: 6, wrap: false, gap: "0 1rem" }}>
+    <Grid.Item>
+      <TimelineItem
+        index={0}
+        period="2021"
+        borderStyle="solid"
+        description="Codex project begins"
+      />
+    </Grid.Item>
+    <Grid.Item>
+      <TimelineItem
+        index={1}
+        period="2021"
+        borderStyle="solid"
+        description="Work on first Client prototype built from Bitswap, IPFS and Nitro"
+      />
+    </Grid.Item>
+    <Grid.Item>
+      <TimelineItem
+        index={2}
+        period="2021"
+        borderStyle="solid"
+        description="Begin primitive Marketplace v1.0 interactions for pricing block exchanging"
+      />
+    </Grid.Item>
+    <Grid.Item>
+      <TimelineItem
+        index={3}
+        period="2021"
+        borderStyle="solid"
+        description="Research begins for remote verification and erasure coding methods"
+      />
+    </Grid.Item>
+    <Grid.Item>
+      <TimelineItem
+        index={4}
+        period="2021"
+        borderStyle="solid"
+        description="Research of Marketplace mechanics in other decentralized storage protocols"
+      />
+    </Grid.Item>
+    <Grid.Item>
+      <TimelineItem
+        index={5}
+        period="2021"
+        borderStyle="solid"
+        description="PoR and erasure coding modeling and prototyping"
+      />
+    </Grid.Item>
+    <Grid.Item>
+      <TimelineItem
+        index={6}
+        period="2022"
+        borderStyle="solid"
+        description=" Implementation of PoR and erasure coding into Codex client"
+      />
+    </Grid.Item>
+    <Grid.Item>
+      <TimelineItem
+        index={7}
+        period="2022"
+        borderStyle="solid"
+        description=" Added first implementation of DHT and discovery v5 methods"
+      />
+    </Grid.Item>
+    <Grid.Item>
+      <TimelineItem
+        index={8}
+        period="2022"
+        borderStyle="solid"
+        description="REST APIs added to Marketplace for Sales Availability"
+      />
+    </Grid.Item>
+    <Grid.Item>
+      <TimelineItem
+        index={9}
+        period="2022"
+        borderStyle="solid"
+        description="Demo of first proof of concept Codex client: PoC-1 (Dagger)"
+      />
+    </Grid.Item>
+    <Grid.Item>
+      <TimelineItem
+        index={10}
+        period="2022"
+        borderStyle="solid"
+        description="Marketplace v2.0 redesign"
+      />
+    </Grid.Item>
+    <Grid.Item>
+      <TimelineItem
+        index={11}
+        period="2022"
+        borderStyle="solid"
+        description="Research into zkSNARK-based methods of proof aggregation to replace PoR"
+      />
+    </Grid.Item>
+    <Grid.Item>
+      <TimelineItem
+        index={12}
+        period="2022"
+        borderStyle="solid"
+        description="Marketplace v2.0 redesign"
+      />
+    </Grid.Item>
+    <Grid.Item>
+      <TimelineItem
+        index={13}
+        period="2023"
+        borderStyle="solid"
+        description="Demo of Codex client PoC-2 (Scimitar)"
+      />
+    </Grid.Item>
+    <Grid.Item>
+      <TimelineItem
+        index={14}
+        period="2023"
+        borderStyle="solid"
+        description="Research into L2s, systems testing and integration of Marketplace into Client"
+      />
+    </Grid.Item>
+    <Grid.Item>
+      <TimelineItem
+        index={15}
+        period="2023"
+        borderStyle="solid"
+        description="Demo of third proof of concept Codex client PoC-3 (Longsword): fast erasure coding, Marketplace, ZK remote auditing"
+      />
+    </Grid.Item>
+    <Grid.Item>
+      <TimelineItem
+        index={16}
+        period="2023"
+        borderStyle="solid"
+        description="Codex MVP Version 1.0 (Katana): fast erasure coding, Marketplace, ZK remote auditing, repair"
+      />
+    </Grid.Item>
+    <Grid.Item>
+      <TimelineItem
+        index={17}
+        period="2024"
+        borderStyle="solid"
+        description="Develop Codex L2 aggregator node architecture"
+      />
+    </Grid.Item>
+    <Grid.Item>
+      <TimelineItem
+        index={18}
+        period="2024"
+        borderStyle="solid"
+        description="Research into payment channels and bandwidth incentives"
+      />
+    </Grid.Item>
+    <Grid.Item>
+      <TimelineItem
+        index={19}
+        period="2024"
+        borderStyle="solid"
+        description="Implementation of incentives: payment channels, bandwidth incentives"
+      />
+    </Grid.Item>
+    <Grid.Item>
+      <TimelineItem
+        index={20}
+        period="2024"
+        borderStyle="solid"
+        description="Enable repair using remote auditing scheme and incentive mechanisms"
+      />
+    </Grid.Item>
+    <Grid.Item>
+      <TimelineItem index={21} period="2025" description="Codex Version 2.0 (Wakizashi)" />
+    </Grid.Item>
+    <Grid.Item>
+      <TimelineItem index={22} period="2025" description="Public mainnet launch" />
+    </Grid.Item>
+    <Grid.Item>
+      <TimelineItem
+        index={23}
+        period="2025"
+        description="Multi-client implementations in Rusn and Go"
+        borderStyle="none"
+      />
+    </Grid.Item>
+  </Grid>
 </Box>
 
 <Box top={{ xs: 144, lg: 216 }}>
@@ -226,98 +291,115 @@ import {
     title="Team"
     columns={1}
   />
-  <ProfileCards
-    items={[
-      {
-        name: 'Dimitriy',
-        githubUsername: 'Dimitriy',
-        githubLink: 'https://github.com/codex-storage',
-        discordUsername: 'Dimitriy',
-        discordLink: 'https://discord.gg/2NXGrsqmDq',
-      },
-      {
-        name: 'Slava',
-        imgSrc:
-          'https://statusim.bamboohr.com/employees/photos/?h=c9028ddcd6da2b7b0aaaf6fabbad7b31',
-        githubUsername: 'Slava',
-        githubLink: 'https://github.com/codex-storage',
-        discordUsername: 'Slava',
-        discordLink: 'https://discord.gg/2NXGrsqmDq',
-      },
-      {
-        name: 'Ben',
-        imgSrc:
-        'https://statusim.bamboohr.com/employees/photos/?h=a620c567ee3da938757bb0a43eda4ec9',
-          githubUsername: 'Ben',
-        githubLink: 'https://github.com/codex-storage',
-        discordUsername: 'Ben',
-        discordLink: 'https://discord.gg/2NXGrsqmDq',
-      },
-      {
-        name: 'Jaremy',
-        imgSrc:
-          'https://statusim.bamboohr.com/employees/photos/?h=8f6066f7e4b7517702c86d85f3ad828d',
-      },
-      {
-        name: 'Tomasz',
-        imgSrc:
-          'https://statusim.bamboohr.com/employees/photos/?h=5edf032c2d62576d36090cf09b5939e5',
-        githubUsername: 'Tomasz',
-        githubLink: 'https://github.com/codex-storage',
-        discordUsername: 'Tomasz',
-        discordLink: 'https://discord.gg/2NXGrsqmDq',
-      },
-      {
-        name: 'Mark',
-        imgSrc:
-          'https://statusim.bamboohr.com/employees/photos/?h=406fd339da77e69aeef5f357ece3ff3d',
-      },
-      {
-        name: 'Eric',
-        imgSrc:
-          'https://statusim.bamboohr.com/employees/photos/?h=4d6fcc7c245ca327414ab4d282b509f2',
-        githubUsername: 'Eric',
-        githubLink: 'https://github.com/codex-storage',
-      },
-      {
-        name: 'Adam',
-        imgSrc:
-          'https://statusim.bamboohr.com/employees/photos/?h=4d6fcc7c245ca327414ab4d282b509f2',
-        githubUsername: 'Adam',
-        githubLink: 'https://github.com/codex-storage',
-      },
-      {
-        name: 'Csaba',
-        imgSrc:
-          'https://statusim.bamboohr.com/employees/photos/?h=4d6fcc7c245ca327414ab4d282b509f2',
-        githubUsername: 'Csaba',
-        githubLink: 'https://github.com/codex-storage',
-      },
-      {
-        name: 'Leo',
-        imgSrc:
-          'https://statusim.bamboohr.com/employees/photos/?h=4d6fcc7c245ca327414ab4d282b509f2',
-        githubUsername: 'Leo',
-        githubLink: 'https://github.com/codex-storage',
-      },
-      {
-        name: 'Balazs',
-        githubUsername: 'Balazs',
-        githubLink: 'https://github.com/codex-storage',
-      },
-      {
-        name: 'Jessie',
-        imgSrc:
-          'https://statusim.bamboohr.com/employees/photos/?h=4d6fcc7c245ca327414ab4d282b509f2',
-        githubUsername: 'Jessie',
-        githubLink: 'https://github.com/codex-storage',
-        discordUsername: 'Jessie',
-        discordLink: 'https://discord.gg/2NXGrsqmDq',
-      },
-    ]}
-  />
+  <Box top={{ xs: 40, md: 80 }} bottom={{ xs: 40, md: 80 }}>
+    <Grid
+      xs={{ cols: 3, gap: '1rem', wrap: false }}
+      md={{ cols: 4, gap: '1rem', wrap: true }}
+    >
+			<Grid.Item>
+				<ProfileCard
+        	name='Dimitriy'
+        	githubUsername='Dimitriy'
+        	githubLink='https://github.com/codex-storage'
+        	discordUsername='Dimitriy'
+        	discordLink='https://discord.gg/2NXGrsqmDq'
+      	/>
+      </Grid.Item>
+      <Grid.Item>
+      	<ProfileCard
+        	name='Slava'
+        	imgSrc='https://statusim.bamboohr.com/employees/photos/?h=c9028ddcd6da2b7b0aaaf6fabbad7b31'
+        	githubUsername='Slava'
+        	githubLink='https://github.com/codex-storage'
+        	discordUsername='Slava'
+        	discordLink='https://discord.gg/2NXGrsqmDq'
+      	/>
+      </Grid.Item>
+      <Grid.Item>
+      	<ProfileCard
+        	name='Ben'
+        	imgSrc='https://statusim.bamboohr.com/employees/photos/?h=a620c567ee3da938757bb0a43eda4ec9'
+          	githubUsername='Ben'
+        	githubLink='https://github.com/codex-storage'
+        	discordUsername='Ben'
+        	discordLink='https://discord.gg/2NXGrsqmDq'
+      	/>
+      </Grid.Item>
+      <Grid.Item>
+      	<ProfileCard
+        	name='Jaremy'
+        	imgSrc='https://statusim.bamboohr.com/employees/photos/?h=8f6066f7e4b7517702c86d85f3ad828d'
+      	/>
+      </Grid.Item>
+      <Grid.Item>
+      	<ProfileCard
+        	name='Tomasz'
+        	imgSrc='https://statusim.bamboohr.com/employees/photos/?h=5edf032c2d62576d36090cf09b5939e5'
+        	githubUsername='Tomasz'
+        	githubLink='https://github.com/codex-storage'
+        	discordUsername='Tomasz'
+        	discordLink='https://discord.gg/2NXGrsqmDq'
+      	/>
+      </Grid.Item>
+      <Grid.Item>
+      	<ProfileCard
+        	name='Mark'
+        	imgSrc='https://statusim.bamboohr.com/employees/photos/?h=406fd339da77e69aeef5f357ece3ff3d'
+      	/>
+      </Grid.Item>
+      <Grid.Item>
+      	<ProfileCard
+        	name='Eric'
+        	imgSrc='https://statusim.bamboohr.com/employees/photos/?h=4d6fcc7c245ca327414ab4d282b509f2'
+        	githubUsername='Eric'
+        	githubLink='https://github.com/codex-storage'
+      	/>
+      </Grid.Item>
+      <Grid.Item>
+      	<ProfileCard
+        	name='Adam'
+        	imgSrc='https://statusim.bamboohr.com/employees/photos/?h=4d6fcc7c245ca327414ab4d282b509f2'
+        	githubUsername='Adam'
+        	githubLink='https://github.com/codex-storage'
+      	/>
+      </Grid.Item>
+      <Grid.Item>
+      	<ProfileCard
+        	name='Csaba'
+        	imgSrc='https://statusim.bamboohr.com/employees/photos/?h=4d6fcc7c245ca327414ab4d282b509f2'
+        	githubUsername='Csaba'
+        	githubLink='https://github.com/codex-storage'
+      	/>
+      </Grid.Item>
+      <Grid.Item>
+      	<ProfileCard
+        	name='Leo'
+        	imgSrc='https://statusim.bamboohr.com/employees/photos/?h=4d6fcc7c245ca327414ab4d282b509f2'
+        	githubUsername='Leo'
+        	githubLink='https://github.com/codex-storage'
+      	/>
+      </Grid.Item>
+      <Grid.Item>
+      	<ProfileCard
+        	name='Balazs'
+        	githubUsername='Balazs'
+        	githubLink='https://github.com/codex-storage'
+      	/>
+      </Grid.Item>
+      <Grid.Item>
+      	<ProfileCard
+        	name='Jessie'
+        	imgSrc='https://statusim.bamboohr.com/employees/photos/?h=4d6fcc7c245ca327414ab4d282b509f2'
+        	githubUsername='Jessie'
+        	githubLink='https://github.com/codex-storage'
+        	discordUsername='Jessie'
+        	discordLink='https://discord.gg/2NXGrsqmDq'
+      	/>
+      </Grid.Item> 
+    </Grid>
+  </Box>
 </Box>
-
+ 
 <Box top={{ xs: 144, lg: 336 }}>
   <CallToActionSection
     title={

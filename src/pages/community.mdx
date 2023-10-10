@@ -1,37 +1,37 @@
 ---
 title: Join the community
+wrapperClassName: community-container
 ---
 
-import { Community } from '../components/mdx'
-
-<div className="community-container">
+import { Grid, Box, SocialCard } from '../components/mdx'
 
 # Join the community
 
-<br/>
-<br/>
+<Box top={48} />
 
 > The Codex project aims to create a decentralised durability engine that allows persisting data in p2p networks. In other words, it allows storing files and data with predictable durability guarantees for later retrieval.
 
 > WARNING: This project is under active development and is considered pre-alpha.
 
-<br/>
+<Box top={24} />
 
 Welcome to the Codex Community! Whether you are interested in building with Codex, contributing to the network, expanding your knowledge, or staying up-to-date with our progress, we have something for everyone.
 
-<Community
-  items={[
-    {
-      type: 'x',
-      link: 'https://twitter.com/Codex_storage',
-      linkLabel: 'Follow us on X',
-    },
-    {
-      type: 'discord',
-      logoSrcDark: '/icons/discord.svg',
-      link: 'https://discord.gg/2NXGrsqmDq',
-      linkLabel: 'Join the community on Discord',
-    },
-  ]}
-/>
-</div>
+<Box top={56} bottom={56}>
+  <Grid xs={{ cols: 1, gap: '1rem' }} md={{ cols: 2 }}>
+    <Grid.Item xs={1}>
+      <SocialCard
+        href='https://twitter.com/Codex_storage'
+        logoSrcDark="/icons/x.svg"  
+        description='Follow us on X'
+      />
+    </Grid.Item>
+    <Grid.Item xs={1}>
+      <SocialCard
+        href='https://discord.gg/2NXGrsqmDq'
+        logoSrcDark="/icons/discord-white.svg"
+        description='Join the community on Discord'
+      />
+    </Grid.Item>
+  </Grid>
+</Box>
