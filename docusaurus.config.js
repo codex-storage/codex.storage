@@ -60,13 +60,6 @@ const config = {
         path: 'about',
       },
     ],
-    [
-      '@acid-info/docusaurus-fathom',
-      {
-        siteId: 'LPOMX',
-        scriptUrl: 'https://fathom.status.im/tracker.js',
-      },
-    ],
   ],
   themeConfig:
     /** @type {import('@acid-info/logos-docusaurus-preset').ThemeConfig} */
