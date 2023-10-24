@@ -104,7 +104,7 @@ const config = {
                 label: 'Twitter',
               },
               {
-                href: 'https://discord.gg/2NXGrsqmDq',
+                href: 'https://discord.gg/codex-storage',
                 label: 'Discord',
               },
               {
