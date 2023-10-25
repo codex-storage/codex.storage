@@ -3,6 +3,8 @@ displayed_sidebar: null
 sidebar_class_name: hidden
 hide_table_of_contents: true
 hide_title: true
+pagination_prev: null
+pagination_next: null
 ---
 
 # News Logs
