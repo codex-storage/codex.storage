@@ -10,3 +10,21 @@ html {
 .theme-doc-breadcrumbs {
   display: none;
 }
+
+[data-theme='light'] {
+  .mdx-hero-video__video::after,
+  .mdx-hero-video__placeholder::after {
+    width: 100%;
+    height: 100%;
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(
+      to top,
+      rgba(var(--lsd-surface-primary), 1),
+      rgba(var(--lsd-surface-primary), 0.24),
+      rgba(var(--lsd-surface-primary), 0.05)
+    );
+  }
+}

@@ -46,6 +46,11 @@ const config = {
           routeBasePath: '/',
           path: 'root-pages',
         },
+        generated: {
+          jobList: {
+            jobBoard: 'codex',
+          },
+        },
         og: {},
       }),
     ],
@@ -64,6 +69,10 @@ const config = {
   themeConfig:
     /** @type {import('@acid-info/logos-docusaurus-preset').ThemeConfig} */
     ({
+      colorMode: {
+        disableSwitch: false,
+        respectPrefersColorScheme: true,
+      },
       navbar: {
         hideOnScroll: true,
         items: [
@@ -91,6 +100,10 @@ const config = {
           {
             label: 'Blog',
             href: 'https://blog.codex.storage',
+          },
+          {
+            label: 'Join Us',
+            href: '/join-us',
           },
         ],
       },
