@@ -102,6 +102,10 @@ const config = {
             href: 'https://blog.codex.storage',
           },
           {
+            label: 'News',
+            to: 'https://codex.storage/news',
+          },
+          {
             label: 'Join Us',
             href: '/join-us',
           },
