@@ -7,7 +7,7 @@ pagination_prev: null
 pagination_next: null
 ---
 
-# **Codex R&D Update for week 11**
+# **Codex R&D Update for Week of December 11, 2023**
 
 The Codex dev team is moving forward rapidly. The organisation’s development efforts mainly focus on launching the beta testnet by the end of the year. Following are some recent research and development highlights. 
 
@@ -47,11 +47,11 @@ For block merkelization, the team is focused on reducing metadata overhead. They
 Poseidon2 is a faster version of the original Poseidon hash function used in zero-knowledge systems (zk). Nim-Poseidon2 is the Nim implementation the Codex team is developing to work efficiently and effectively with the Codex client. 
 
 - Merged outstanding PRs
-- <https://github.com/codex-storage/nim-poseidon2/pull/7>
+- https://github.com/codex-storage/nim-poseidon2/pull/7
 - <https://github.com/codex-storage/nim-poseidon2/pull/8>
 - <https://github.com/codex-storage/nim-poseidon2/pull/9>
 - Added keyed compress
-- https://github.com/codex-storage/nim-poseidon2/pull/10
+- <https://github.com/codex-storage/nim-poseidon2/pull/10>
 - Updated Merkle root with extra bits to mitigate possible attacks
 - https://github.com/codex-storage/nim-poseidon2/pull/11
 - Fixed compilation problem with Constantine and secp256k1
@@ -84,8 +84,7 @@ The testing and infrastructure group is preparing to deploy tens or hundreds of 
 - Tooling developed 
 - Elastic search log retrieval <https://github.com/codex-storage/logtools>
 - <https://vimeo.com/884370956/e8a32a58c8?share=copy>
-- DHTDht fixes related to performance and stability 
-
+- DHT fixes related to performance and stability 
 - Fix: queue messages when there is no encryption key
 - Fix: arrive at working keys in case of simultaneous cross-connect
 - Fix timeout and delete
