@@ -132,6 +132,10 @@ const config = {
                 href: 'https://github.com/codex-storage',
                 label: 'Github',
               },
+              {
+                href: 'https://guide.codex.storage/',
+                label: 'Brand Guidelines',
+              },
             ],
           },
           {
