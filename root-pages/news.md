@@ -47,15 +47,15 @@ For block merkelization, the team is focused on reducing metadata overhead. They
 Poseidon2 is a faster version of the original Poseidon hash function used in zero-knowledge systems (zk). Nim-Poseidon2 is the Nim implementation the Codex team is developing to work efficiently and effectively with the Codex client. 
 
 - Merged outstanding PRs
-- https://github.com/codex-storage/nim-poseidon2/pull/7
+- <https://github.com/codex-storage/nim-poseidon2/pull/7>
 - <https://github.com/codex-storage/nim-poseidon2/pull/8>
 - <https://github.com/codex-storage/nim-poseidon2/pull/9>
 - Added keyed compress
 - <https://github.com/codex-storage/nim-poseidon2/pull/10>
 - Updated Merkle root with extra bits to mitigate possible attacks
-- https://github.com/codex-storage/nim-poseidon2/pull/11
+- <https://github.com/codex-storage/nim-poseidon2/pull/11>
 - Fixed compilation problem with Constantine and secp256k1
-- https://github.com/codex-storage/nim-codex/pull/625
+- <https://github.com/codex-storage/nim-codex/pull/625>
 
 ## **Epic: Wiring the Proving System**
 
