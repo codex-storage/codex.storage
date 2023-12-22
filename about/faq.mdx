@@ -1,0 +1,109 @@
+---
+title: Frequently asked questions
+hide_table_of_contents: true
+sidebar_label: FAQ
+---
+
+import { AccordionItem } from '@site/src/components/mdx'
+
+# Frequently asked questions
+
+<AccordionItem title="What is Codex?">
+  Codex is a state-of-the-art, decentralized storage platform that provides a solution for highly durable data storage with high decentralization, aiming to resist censorship and prevent single points of failure inherent in centralized systems.
+</AccordionItem>
+
+<AccordionItem title="How is Codex different from centralized storage solutions (eg. Google Cloud)?">
+  Unlike centralized systems, Codex is designed to offer data durability, resiliency to cloud failures, and censorship resistance, making it vital for use cases like preserving factual history records.
+</AccordionItem>
+
+<AccordionItem title="What kind of durability does Codex promise?">
+  While no system can promise absolute data loss protection, Codex's architecture, economic incentives, and encoding algorithms aim to provide high data durability with the novel implementation of techniques such as Erasure Coding and Lazy Repair.
+</AccordionItem>
+
+<AccordionItem title="What is Data Durability?">
+  Data Durability means how likely it is that data will stay safe over time. For instance, a storage system with durability of eleven nines (99.999999999%) means there's a very tiny chance (0.0000000001%) of losing data. In simple terms, you might lose only one file out of a million over ten million years. Data Durability is crucial because losing even a little data can be a big problem. Codex uses techniques like erasure coding to keep data safe. This method splits data and stores it in different places. So, if a piece is lost or damaged, the other pieces can be used to recreate the original data. This keeps users' data secure and intact.
+</AccordionItem>
+
+<AccordionItem title="What is Erasure Coding and how does it relate to data storage in Codex?">
+  Erasure Coding is a way to protect data by breaking it into parts, adding extra data for safety, and then spreading these parts across various locations or systems. On Codex, this involves splitting data into pieces, known as "shards," along with extra "parity shards" for backup. These parity shards are created using mathematical formulas based on the original data, helping to rebuild the data if some shards go missing or get damaged. This method lets Codex offer consistent and reliable data storage, meaning that as long as a certain number of shards (N out of M) are safe, the entire original data can be perfectly restored, ensuring a high level of data safety.
+</AccordionItem>
+
+<AccordionItem title="What is Lazy Repair in the context of Codex?">
+  Lazy Repair is a method in distributed storage systems for managing data issues. In Codex, if a piece of data (a shard) is lost or damaged, the system doesn't fix it right away. It waits until there's enough damage to make repair worthwhile. This is efficient because it saves resources by not addressing small problems that don't harm the overall data. The system only repairs when the number of good shards drops too low, balancing resource use with keeping data safe and available.
+</AccordionItem>
+
+<AccordionItem title="Is Codex part of Logos?">
+  Yes, Codex is expected to serve as the storage pillar of Logos, the protocol protecting Logos organizational data, aligning with the broader Logos initiative.
+</AccordionItem>
+
+<AccordionItem title="How does Codex compare to other decentralized storage solutions currently out on the market?">
+  Codex distinguishes itself from other storage solutions in the market through several key features: having an Advanced Marketplace and Data Distribution, and using SNARKS for Data Loss Detection.
+</AccordionItem>
+
+<AccordionItem title="How do the Advanced Marketplace and Data Distribution work?">
+  Codex features an advanced marketplace that promotes high levels of decentralization and efficient data distribution. This structure prevents the concentration of data in a few large nodes, enhancing the efficiency of data repair and retrieval. In contrast, other protocols design their systems to create "supernodes"​.
+</AccordionItem>
+
+<AccordionItem title="How does Codex use SNARKS for Data Loss Detection?">
+  Codex incorporates succinct non-interactive arguments of knowledge (SNARKS) for efficient and reliable data loss detection. Storage Providers (SPs) respond to challenges by sending proofs to Proof Aggregators, who verify and post these proofs to the blockchain. If an SP fails to prove possession of data or sends invalid proof, their collateral is slashed, providing an economic incentive to ensure data durability.
+</AccordionItem>
+
+<AccordionItem title="Can Codex be used for cold storage by blockchain networks?">
+  Yes, Codex is discussing with various blockchain projects to preserve their full chain state and history in a way that resists censorship and does not require full history to be stored locally by every node.
+</AccordionItem>
+
+<AccordionItem title="Is Codex currently operational?">
+  Codex is currently undergoing extensive internal testing. The upcoming public testnet is planned for Q1 2024.
+</AccordionItem>
+
+<AccordionItem title="What types of data can be stored on Codex?">
+  Codex can handle various types of data but is particularly suited for mission-critical history and state information for Web3 applications that need to remain unaltered, and accessible.
+</AccordionItem>
+
+<AccordionItem title="Will every node be required to store full data history in Codex?">
+  No, the design allows for storing vast amounts of data without requiring every node to store the full history.
+</AccordionItem>
+
+<AccordionItem title="What are all the different types of nodes in Codex’s network?">
+  Codex consists of a p2p network of Storage Nodes, Aggregator Nodes, Caching Nodes, and Client Nodes.
+</AccordionItem>
+
+<AccordionItem title="What is a Storage Node?">
+  Storage nodes provide long-term reliable storage. For a storage node to operate it needs to stake a collateral proportional to the amount of data it's willing to store. Once the collateral has been staked and the node begins to store data, it needs to periodically provide proof of data possession. If a node fails to provide proof in time, it is penalized with a portion of its stake; if the node fails to provide proof several times in a row, it loses the entirety of the stake.
+</AccordionItem>
+
+<AccordionItem title="What is an Aggregator Node?">
+  Aggregator nodes are in charge of collecting, validating, and submitting proofs to an adjudicator contract which rewards and penalizes storage and other validator nodes. A validator node also needs to stake collateral to be able to participate in the validation process. Note that we don't use the term "adjudicator contract" in the literal sense of an Ethereum contract. We use it to indicate anything that executes on a consensus engine.
+</AccordionItem>
+
+<AccordionItem title="What is a Caching Node?">
+  Bandwidth incentives allow anyone to operate as a caching node, profiting only from caching and serving popular content. We expect this to have the emergent property of an organic CDN, where nodes with spare bandwidth but limited or unreliable storage can collectively scale the network depending on current demands. Any node can become a caching node for any period, even ephemeral nodes.
+</AccordionItem>
+
+<AccordionItem title="What is a Client Node?">
+  Client Nodes engage with other nodes to store, find, and retrieve data from the network. We expect regular nodes to be the most common type of node in the Codex Network. These will consume services offered by other nodes in exchange for payments. A regular node can also be a caching node by storing previously consumed data that other nodes can retrieve from it. This allows nodes to offset some of the cost of participating in the network and it's expected to allow the majority of nodes to participate on an almost free basis after an initial entree fee. Unlike the other types of nodes, we expect the regular nodes to have intermittent up-time as they are running on personal computers and mobile devices.
+</AccordionItem>
+
+<AccordionItem title="Can I build my application on top of Codex?">
+  Not yet. Stay tuned for more updates from the Codex project for when you can utilize your application on top of the Codex network.
+</AccordionItem>
+
+<AccordionItem title="Does Codex have a token?">
+  No Codex token has been issued yet. Please be wary of impersonators claiming the issuance of Codex tokens or any form of Codex airdrop.
+</AccordionItem>
+
+<AccordionItem title="How will the supply of Codex's tokens be allocated?">
+  The supply allocation details are under preliminary discussion and have not been finalized.
+</AccordionItem>
+
+<AccordionItem title="What role will the Codex token have in the network?">
+   The Codex token serves as collateral for Storage Providers and a means of payment in the storage contracts.
+</AccordionItem>
+
+<AccordionItem title="Can I or would I be able to use my storage to participate in the Codex network?">
+   Yes. The testnet phase is set for Q1 2024, stay tuned.
+</AccordionItem>
+
+<AccordionItem title="Can I use Codex right now?">
+   Not yet. However, you will be able to participate in the testnet phase of Q1 2024. Stay tuned.
+</AccordionItem>
