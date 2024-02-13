@@ -70,6 +70,7 @@ const config = {
       {
         siteId: 'LPOMX',
         scriptUrl: 'https://fathom.status.im/tracker.js',
+        hostnames: ['codex.storage'],
       },
     ],
   ],
