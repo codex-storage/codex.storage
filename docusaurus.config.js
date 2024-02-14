@@ -69,7 +69,7 @@ const config = {
       '@acid-info/docusaurus-fathom',
       {
         siteId: 'OISNT',
-        scriptUrl: 'https://fathom.status.im/tracker.js',
+        scriptUrl: 'https://fathom.bi.status.im/tracker.js',
         hostnames: ['codex.storage'],
       },
     ],
