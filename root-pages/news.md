@@ -9,7 +9,7 @@ pagination_next: null
 
 # **Codex R&D Update for Week of Jan 12, 2024**
 
->The Codex team continues to make progress with various initiatives to wrap up the demo for the Q1/Q2 public testnet release. An internal testnet has been running for the past few weeks and has been used to test the >latest version of Codex and can be accessed using the Codex Testnet Starter documentation.
+>The Codex team continues to make progress with various initiatives to wrap up the demo for the Q1/Q2 public testnet release. An internal testnet has been running for the past few weeks and has been used to test the latest version of Codex and can be accessed using the Codex Testnet Starter documentation.
 >
 >Ongoing and new lines of research and development will soon begin in preparation for the next version of Codex used for the mainnet release.. Here are the updates from different team members and their ongoing work. 
 
@@ -42,13 +42,13 @@ Ongoing:
 
 Completed:
 
-Wrapped [ark-circom](https://github.com/arkworks-rs/circom-compat) in a C FFI via:
+- Wrapped [ark-circom](https://github.com/arkworks-rs/circom-compat) in a C FFI via:
   - [nim-circom-compat](https://github.com/codex-storage/circom-compat-ffi) and
   - [circom-compat-ffi](https://github.com/codex-storage/circom-compat-ffi)
 
 Ongoing:
 
-[Integration of codex-storage-proofs-circuits](https://github.com/codex-storage/codex-storage-proofs-circuits) with a [PR in nim-codex](https://github.com/codex-storage/nim-codex/pull/686)
+- [Integration of codex-storage-proofs-circuits](https://github.com/codex-storage/codex-storage-proofs-circuits) with a [PR in nim-codex](https://github.com/codex-storage/nim-codex/pull/686)
 
 # **Epic: Improve Client Stability**
 
