@@ -38,7 +38,7 @@ Ongoing:
 - [Create a repo as a place to start implementing some core async-threading tools for Chronos like worker pool & disk io on top of the ThreadSignalPtr primitive](https://github.com/elcritch/apatheia)
   - plans to support refc & orc
 
-# **Epic: Wiring the Proving System**
+## **Epic: Wiring the Proving System**
 
 Completed:
 
@@ -50,7 +50,7 @@ Ongoing:
 
 - [Integration of codex-storage-proofs-circuits](https://github.com/codex-storage/codex-storage-proofs-circuits) with a [PR in nim-codex](https://github.com/codex-storage/nim-codex/pull/686)
 
-# **Epic: Improve Client Stability**
+## **Epic: Improve Client Stability**
 
 Completed:
 
@@ -68,7 +68,7 @@ Ongoing:
 
 # **Marketplace** 
 
-# **Epic: End-to-end Testing**
+## **Epic: End-to-end Testing**
 
 Completed:
 
