@@ -25,7 +25,7 @@ The different teams have actively moving on various fronts. The following are th
 
 # **Client**
 
-**Epic: Nim Improvements**
+## **Epic: Nim Improvements**
 
 Completed:
 
@@ -92,7 +92,7 @@ Ongoing:
 - Start tweaking the nim-json api to normalize both serialize and deserialize pragmas, with modes: OptOut, OptIn, and Strict
 - WIP on adding PATCH call for Availabilities
 
-#**Research**
+# **Research**
 
 >2024 R&D Goals
 >1. Proving system and aggregation improvements (folding or lookups)
