@@ -41,8 +41,7 @@ html {
     position: absolute;
     right: 0;
     top: 0;
-    transform: rotate(170deg);
-    margin-right: -300px;
+    margin-right: -240px;
     margin-top: -50%;
     scale: 0.95;
   }
@@ -63,7 +62,7 @@ html {
 
 @media screen and (max-width: 768px) {
   .mdx-hero {
-    margin-bottom: 280px;
+    margin-bottom: 260px;
   }
 
   .mdx-hero > .mdx-hero-image > img {
@@ -75,7 +74,7 @@ html {
 
 @media screen and (max-width: 650px) {
   .mdx-hero {
-    margin-bottom: 260px;
+    margin-bottom: 240px;
   }
 
   .mdx-hero > .mdx-hero-image > img {
@@ -86,7 +85,7 @@ html {
 
 @media screen and (max-width: 450px) {
   .mdx-hero {
-    margin-bottom: 200px;
+    margin-bottom: 180px;
   }
 
   .mdx-hero > .mdx-hero-image > img {
