@@ -7,9 +7,9 @@ import {
   Hero,
   HeroTitle,
   HeroDescription,
-  HeroVideo,
   HeroActions,
   HeroAction,
+  HeroImage,
   CallToActionSection,
   CallToActionButton,
   FeatureList,
@@ -18,15 +18,18 @@ import {
   Box,
   Grid,
   ProfileCard,
+  SectionHeader,
+  ShowcaseCard,
+  InputCTASection,
 } from '../components/mdx'
 
-<Hero size="large">
-  <HeroInfo>
-    <HeroTitle>
-      {'DEFEND AGAINST DATA CENSORSHIP WITH CODEX'}
+<Hero size="large" verticalAlign="center">
+  <HeroInfo hideScrollToBottom>
+    <HeroTitle uppercase={false}>
+      Defend against data censorship with Codex
     </HeroTitle>
     <HeroDescription>
-      {'Codex is a durable, decentralised data storage protocol, created so the world community can preserve its most important knowledge without risk of censorship.'} 
+      Codex is a durable, decentralised data storage protocol, created so the world community can preserve its most important knowledge without risk of censorship.
     </HeroDescription>
     <HeroActions>
       <HeroAction href="https://discord.gg/codex-storage" target="_blank">
@@ -34,51 +37,58 @@ import {
       </HeroAction>
     </HeroActions>
   </HeroInfo>
-  <HeroVideo
-    placeholderSrc="/hero/atlas02-1080x1080-placeholder.png"
-    mobile={{ height: "100%", minHeight: "80vh" }}
-  >
-    <source src="/hero/atlas02-2048x2048-24fps-1M.mov" type='video/mp4; codecs="hvc1"' />
-    <source src="/hero/atlas02-2048x2048-24fps-1M.webm" type="video/webm" />  
-  </HeroVideo>
+  <HeroImage src="/hero/hero-image.gif" alt="alt" />
 </Hero>
 
-<FeatureList
-  id="features"
-  alignment="top"
-  title="Codex attributes"
-  features={[
-    {
-      title: 'Durable',
-      description:
-        'Codex implements erasure coding to efficiently ensure data is always available without the storage cost of replication. Through sublinear sampling, Codex detects data corruption throughout the network, allowing for repairs to be made before loss is permanent.',
-    },
-    {
-      title: 'Censorship resistant',
-      description:
-        "The Codex network is designed to withstand DDoS attacks, data corruption, and even the shutdown of a significant number of nodes. Access to your data remains during these otherwise catastrophic events.",
-    },
-    {
-      title: 'Decentralised',
-      description:
-        'Codex implements protocol constructs that incentivize wide participation of data storage providers, both small and large, thus ensuring a robust network resistant to censorship and external attack.',
-    },
-    {
-      title: 'Accessible',
-      description:
-        "Participating in the Codex network is highly accessible thanks to its permissionless nature, bandwidth usage optimizations like its \"lazy repair\" recovery system, and lightweight ZK-based remote auditing.",
-    },
-  ]}
->
-  <CallToActionButton variant="outlined" href="/about">
-    Read more
-  </CallToActionButton>
-</FeatureList>
+<Box>
+  <SectionHeader noBorder title="Codex clients"></SectionHeader>
+  <Box top={{ xs: 64 }}>
+    <Grid
+      xs={{ cols: 2, wrap: true, gap: '1.5rem 1em' }}
+      lg={{ cols: 4, gap: '1rem' }}
+    >
+      <Grid.Item>
+        <ShowcaseCard
+          index={1}
+          name="Durable"
+          description="Codex implements erasure coding to efficiently ensure data is always available without the storage cost of replication. Through sublinear sampling, Codex detects data corruption throughout the network, allowing for repairs to be made before loss is permanent."
+          borderStyle="none"
+        />
+      </Grid.Item>
+      <Grid.Item>
+        <ShowcaseCard
+          index={2}
+          name="Censorship resistant"
+          description="The Codex network is designed to withstand DDoS attacks, data corruption, and even the shutdown of a significant number of nodes. Access to your data remains during these otherwise catastrophic events."
+          borderStyle="none"
+        />
+      </Grid.Item>
+      <Grid.Item>
+        <ShowcaseCard
+          index={3}
+          name="Decentralised"
+          description="Codex implements protocol constructs that incentivize wide participation of data storage providers, both small and large, thus ensuring a robust network resistant to censorship and external attack."
+          borderStyle="none"
+        />
+      </Grid.Item>
+      <Grid.Item>
+        <ShowcaseCard
+          index={4}
+          name="Accessible"
+          description='Participating in the Codex network is highly accessible thanks to its permissionless nature, bandwidth usage optimizations like its "lazy repair" recovery system, and lightweight ZK-based remote auditing.'
+          borderStyle="none"
+        />
+      </Grid.Item>
+    </Grid>
+  </Box>
+</Box>
 
 <Box top={{ xs: 144, lg: 216 }}>
   <CallToActionSection
     title="Logos Collective"
     columns={1}
+    border={false}
+    align="center"
     description={
       <>
         Codex is powering the data storage layer of the Logos technology stack. Logos is a grassroots movement, building the infrastructure for trust-minimised, corruption-resistant governing services and social institutions for peaceful people worldwide.
@@ -93,8 +103,9 @@ import {
   />
 </Box>
 
-<Box top={{ xs: 144, lg: 216 }}>
+<Box top={{ xs: 144, lg: 190 }}>
   <Roadmap
+    noBorder
     title="Development Roadmap"
     description="Codex is currently in its first proof-of-concept iteration and aims to release its alpha version, Katana, before the end of Q4 2023."
     timeline={[
@@ -198,15 +209,12 @@ import {
   />
 </Box>
 
-<Box top={{ xs: 144, lg: 216 }}>
-  <CallToActionSection
-    title="Team"
-    columns={1}
-  />
-  <Box top={{ xs: 40, md: 80 }} bottom={{ xs: 40, md: 80 }}>
+<Box top={{ xs: 144, lg: 190 }}>
+  <SectionHeader title="Team" noBorder />
+  <Box top={{ xs: 40, md: 80 }}>
     <Grid
-      xs={{ cols: 3, gap: '1rem', wrap: false, scrollButtons: false }}
-      md={{ cols: 4, gap: '1rem', wrap: true }}
+      xs={{ cols: 3, gap: '1.5rem 1rem', wrap: false, scrollButtons: false }}
+      md={{ cols: 4, gap: '1.5rem 1rem', wrap: true }}
     >
 			<Grid.Item>
 				<ProfileCard
@@ -330,16 +338,43 @@ import {
   </Box>
 </Box>
  
-<Box top={{ xs: 144, lg: 336 }}>
-  <CallToActionSection
-    title={
-      <>
-        Want to stay in touch with Codex? <br/> 
-        Join the Discord community.
-      </>
-    }
-    label="Discord"
-    target="_blank"
-    href="https://discord.gg/codex-storage"
-  />
+<Box top={{ xs: 152, lg: 300 }}>
+  <Grid
+    xs={{ cols: 1, gap: '1rem' }}
+    md={{ cols: 2 }}
+    className="events-cta-sections"
+  >
+    <Grid.Item xs={1}>
+      <InputCTASection
+        description={
+          'Want to get involved with Codex?\nJoin the Discord community.'
+        }
+        link="https://discord.gg/codex-storage"
+        label="Get Involved"
+      />
+    </Grid.Item>
+    <Grid.Item xs={1}>
+      <InputCTASection
+        description={'Subscribe\nto our newsletter'}
+        label="Subscribe"
+        formInput={[
+          {
+            label: 'Name',
+            placeholder: 'Name',
+            type: 'text',
+            name: 'name',
+            required: true,
+          },
+          {
+            label: 'Email',
+            placeholder: 'Enter your email',
+            type: 'email',
+            name: 'email',
+            required: true,
+          },
+        ]}
+        formListId={3}
+      />
+    </Grid.Item>
+  </Grid>
 </Box>
