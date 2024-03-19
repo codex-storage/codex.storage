@@ -28,3 +28,69 @@ html {
     );
   }
 }
+
+.mdx-hero > .mdx-hero-image > img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-top: -40%;
+}
+
+@media screen and (min-width: 996px) {
+  .mdx-hero > .mdx-hero-image > img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: rotate(170deg);
+    margin-right: -300px;
+    margin-top: -50%;
+    scale: 0.95;
+  }
+}
+
+@media screen and (max-width: 996px) {
+  .mdx-hero > .mdx-hero-image > img {
+    margin-right: -200px;
+    margin-left: 0;
+    scale: 0.9;
+    margin-top: -36%;
+  }
+
+  .mdx-hero {
+    margin-bottom: 200px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mdx-hero {
+    margin-bottom: 280px;
+  }
+
+  .mdx-hero > .mdx-hero-image > img {
+    margin-right: 22px;
+    scale: 0.9;
+    margin-top: -15%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .mdx-hero {
+    margin-bottom: 260px;
+  }
+
+  .mdx-hero > .mdx-hero-image > img {
+    scale: 1;
+    margin-top: -8%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .mdx-hero {
+    margin-bottom: 200px;
+  }
+
+  .mdx-hero > .mdx-hero-image > img {
+    scale: 1;
+    margin-top: 0;
+  }
+}
