@@ -36,6 +36,17 @@ html {
   margin-top: -40%;
 }
 
+.mdx-section-header__extra {
+  display: flex;
+  align-items: center;
+}
+
+.read-more-button {
+  display: flex;
+  align-items: center;
+  text-decoration: none !important;
+}
+
 @media screen and (min-width: 996px) {
   .mdx-hero > .mdx-hero-image > img {
     position: absolute;

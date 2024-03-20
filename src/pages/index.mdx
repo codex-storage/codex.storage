@@ -23,6 +23,9 @@ import {
   InputCTASection,
 } from '../components/mdx'
 
+import { Button } from '@acid-info/lsd-react'
+import Link from '@docusaurus/Link'
+
 <Hero size="large" verticalAlign="center">
   <HeroInfo hideScrollToBottom>
     <HeroTitle uppercase={false}>
@@ -41,7 +44,11 @@ import {
 </Hero>
 
 <Box>
-  <SectionHeader noBorder title="Codex attributes"></SectionHeader>
+  <SectionHeader noBorder title="Codex attributes">
+    <Link className="read-more-button" href="/about">
+      <Button size="small">Read more</Button>
+    </Link>
+  </SectionHeader>
   <Box top={{ xs: 64 }}>
     <Grid
       xs={{ cols: 2, wrap: true, gap: '1.5rem 1em' }}
@@ -83,7 +90,7 @@ import {
   </Box>
 </Box>
 
-<Box top={{ xs: 144, lg: 216 }}>
+<Box top={{ xs: 144, lg: 190 }}>
   <CallToActionSection
     title="Logos Collective"
     columns={1}
@@ -108,6 +115,8 @@ import {
     noBorder
     title="Development Roadmap"
     description="Codex is currently in its first proof-of-concept iteration and aims to release its alpha version, Katana, before the end of Q4 2023."
+    href="/about/roadmap"
+    linkLabel="Learn more"
     timeline={[
       {
         period: [2021],
@@ -209,9 +218,12 @@ import {
   />
 </Box>
 
-<Box top={{ xs: 144, lg: 190 }}>
+<Box top={{ xs: 134 }}>
   <SectionHeader title="Team" noBorder />
-  <Box top={{ xs: 40, md: 80 }}>
+  <Box
+    top={{ xs: 64 }}
+    bottom={{ xs: 64 }}
+  >
     <Grid
       xs={{ cols: 3, gap: '1.5rem 1rem', wrap: false, scrollButtons: false }}
       md={{ cols: 4, gap: '1.5rem 1rem', wrap: true }}
@@ -342,7 +354,6 @@ import {
   <Grid
     xs={{ cols: 1, gap: '1rem' }}
     md={{ cols: 2 }}
-    className="events-cta-sections"
   >
     <Grid.Item xs={1}>
       <InputCTASection
