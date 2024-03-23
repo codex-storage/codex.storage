@@ -73,7 +73,7 @@ html {
 
 @media screen and (max-width: 768px) {
   .mdx-hero {
-    margin-bottom: 260px;
+    margin-bottom: 40px;
   }
 
   .mdx-hero > .mdx-hero-image > img {
@@ -85,18 +85,20 @@ html {
 
 @media screen and (max-width: 650px) {
   .mdx-hero {
-    margin-bottom: 240px;
+    margin-bottom: 20px;
   }
 
   .mdx-hero > .mdx-hero-image > img {
     scale: 1;
     margin-top: -8%;
+    margin-right: 0;
   }
 }
 
 @media screen and (max-width: 450px) {
   .mdx-hero {
-    margin-bottom: 180px;
+    margin-bottom: 0px;
+    margin-bottom: -20px;
   }
 
   .mdx-hero > .mdx-hero-image > img {
