@@ -120,7 +120,7 @@ const config = {
         ],
       },
       footer: {
-        copyright: 'Codex @2023<br/>All Rights Reserved.',
+        copyright: 'Codex',
         links: [
           {
             items: [
