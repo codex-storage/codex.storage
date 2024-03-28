@@ -36,6 +36,7 @@
     satori "^0.10.1"
     sharp "^0.32.1"
 
+<<<<<<< HEAD
 "@acid-info/logos-docusaurus-preset@v1.0.0-alpha.150":
   version "1.0.0-alpha.150"
   resolved "https://registry.yarnpkg.com/@acid-info/logos-docusaurus-preset/-/logos-docusaurus-preset-1.0.0-alpha.150.tgz#14b5101624f0621e1baa5cd715f7e0c8796b2475"
@@ -44,6 +45,16 @@
     "@acid-info/docusaurus-og" "^1.0.0-alpha.131"
     "@acid-info/logos-docusaurus-search-local" "^1.0.0-alpha.111"
     "@acid-info/logos-docusaurus-theme" "^1.0.0-alpha.150"
+=======
+"@acid-info/logos-docusaurus-preset@v1.0.0-alpha.154":
+  version "1.0.0-alpha.154"
+  resolved "https://registry.yarnpkg.com/@acid-info/logos-docusaurus-preset/-/logos-docusaurus-preset-1.0.0-alpha.154.tgz#70c4850bb884c0acea7b2adefb59a3ba2b88dc0c"
+  integrity sha512-8B3vAC8utApQ1C//wEPR41mYBd6ZjHXrfrCMLGhI0Iu2OU4vJwL6SM6jT7D38xTPKDV1TnHgpYaJv4PxLL9xnw==
+  dependencies:
+    "@acid-info/docusaurus-og" "^1.0.0-alpha.131"
+    "@acid-info/logos-docusaurus-search-local" "^1.0.0-alpha.111"
+    "@acid-info/logos-docusaurus-theme" "^1.0.0-alpha.154"
+>>>>>>> 10b0bd1 (chore: upgrade preset)
     "@docusaurus/core" "^2.4.1"
     "@docusaurus/module-type-aliases" "^2.4.1"
     "@docusaurus/preset-classic" "^2.4.1"
@@ -71,10 +82,17 @@
     "@easyops-cn/docusaurus-search-local" "^0.33.6"
     lodash "^4.17.21"
 
+<<<<<<< HEAD
 "@acid-info/logos-docusaurus-theme@^1.0.0-alpha.150":
   version "1.0.0-alpha.150"
   resolved "https://registry.yarnpkg.com/@acid-info/logos-docusaurus-theme/-/logos-docusaurus-theme-1.0.0-alpha.150.tgz#25d3372ab9342216adaa00e9743d31e2bc7d7a5f"
   integrity sha512-wkMCC/qxXY9RGxpHmlRDzyJvhFNXPm0nfHpz4pFJ3GVeCoTt/qVDxB27VLAzKCtuS/sw7JeCNOwDABRw6P1Rww==
+=======
+"@acid-info/logos-docusaurus-theme@^1.0.0-alpha.154":
+  version "1.0.0-alpha.154"
+  resolved "https://registry.yarnpkg.com/@acid-info/logos-docusaurus-theme/-/logos-docusaurus-theme-1.0.0-alpha.154.tgz#81ce20f516417c440ccab5f181ca30266cab40c4"
+  integrity sha512-ICqVKpXPPtsmz/blmWKKCHRLXI/4d7btQdRq73Jv4HnfmTrMBMh41cLX0qNmHKe9B6mLe03pvOsiKLrhUOTzAQ==
+>>>>>>> 10b0bd1 (chore: upgrade preset)
   dependencies:
     "@acid-info/docusaurus-og" "^1.0.0-alpha.131"
     "@acid-info/lsd-react" "^0.1.0-beta.3"
