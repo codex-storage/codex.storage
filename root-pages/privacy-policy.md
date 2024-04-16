@@ -33,9 +33,15 @@ In this regard, we collect and process the following personal data from your use
 
 * **IP address**: As part of such use of the Website we briefly process your IP address but we have no way of identifying you. We however have a legitimate interest in processing such IP addresses to ensure the technical functionality and enhance the security measures of the Website. This IP address is not stored by us over time.
 
+* **Fathom Analytics**: We note that we make use of Fathom Analytics, which you can read more about here: https://usefathom.com/. In short, Fathom Analytics is an alternative to Google Analytics, that doesn’t compromise visitor privacy for data. Fathom Analytics collects trends and insights, not personal details about specific website visitors. Fathom Analytics offers simple traffic insights such as top pages, top referrers, bounce rate, and average time people spend on a site.
+
 ### 3) Third party processing of personal data
 
-In addition to our limited and collection of personal data, third parties may collect or process personal data as a result of the Website making use of certain features or to provide certain content. To the extent you interact with such third party content or features, their respective privacy policies will apply. 
+In addition to our limited and collection of personal data, third parties may collect or process personal data as a result of the Website making use of certain features or to provide certain content. To the extent you interact with such third party content or features, their respective privacy policies will apply.
+
+We would however like to draw your attention to the following:
+
+* **Youtube**: The Website may embed videos from Youtube, a service provided by Google LLC, using Youtube’s privacy-enhanced mode. When you interact with such videos, Youtube may place cookies on your personal device. The cookies do not directly identify individual users and YouTube will not store information to personalise your experience unless you are logged in to a Google account. We do not have any control over these cookies set by Youtube and it is recommended that you review YouTube’s embedding videos information page.
 
 ### 4) Security measures we take in respect of the Website 
 
