@@ -42,6 +42,7 @@ const config = {
           },
         },
         docs: {
+          id: 'root-pages',
           breadcrumbs: false, // TODO: not working
           routeBasePath: '/',
           path: 'root-pages',
@@ -163,6 +164,10 @@ const config = {
               {
                 href: '/privacy-policy',
                 label: 'Privacy Policy',
+              },
+              {
+                href: '/security',
+                label: 'Security',
               },
             ],
           },

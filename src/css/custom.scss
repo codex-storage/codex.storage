@@ -48,7 +48,7 @@ html {
   text-decoration: none !important;
 }
 
-.mdx-hero > .mdx-hero-image > img {
+.mdx-hero > .mdx-hero-asset img {
   position: absolute;
   right: 0;
   top: 0;
@@ -56,7 +56,7 @@ html {
 }
 
 @media screen and (min-width: 996px) {
-  .mdx-hero > .mdx-hero-image > img {
+  .mdx-hero > .mdx-hero-asset img {
     position: absolute;
     right: 0;
     top: 0;
@@ -67,7 +67,7 @@ html {
 }
 
 @media screen and (max-width: 996px) {
-  .mdx-hero > .mdx-hero-image > img {
+  .mdx-hero > .mdx-hero-asset img {
     margin-right: -200px;
     margin-left: 0;
     scale: 0.9;
@@ -84,7 +84,7 @@ html {
     margin-bottom: 40px;
   }
 
-  .mdx-hero > .mdx-hero-image > img {
+  .mdx-hero > .mdx-hero-asset img {
     margin-right: 22px;
     scale: 0.9;
     margin-top: -15%;
@@ -96,7 +96,7 @@ html {
     margin-bottom: 20px;
   }
 
-  .mdx-hero > .mdx-hero-image > img {
+  .mdx-hero > .mdx-hero-asset img {
     scale: 1;
     margin-top: -8%;
     margin-right: 0;
@@ -109,7 +109,7 @@ html {
     margin-bottom: -20px;
   }
 
-  .mdx-hero > .mdx-hero-image > img {
+  .mdx-hero > .mdx-hero-asset img {
     scale: 1;
     margin-top: 0;
   }
