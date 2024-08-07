@@ -118,10 +118,20 @@ html {
 
 @media screen and (max-width: 500px) {
   .mdx-hero {
-    margin-bottom: -20px;
+    margin-bottom: -100px;
   }
 
   .mdx-hero > .mdx-hero-asset video {
     margin-top: -5%;
   }
+}
+
+.test-video {
+  width: 80%;
+}
+
+.test-cta {
+  width: 100%;
+  flex-basis: unset !important;
+  text-decoration: none;
 }
