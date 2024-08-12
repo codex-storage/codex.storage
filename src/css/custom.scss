@@ -132,3 +132,7 @@ html {
   flex-basis: unset !important;
   text-decoration: none;
 }
+
+.bottom-cta-sections > div:last-of-type > div:first-of-type .lsd-button {
+  width: unset !important;
+}
