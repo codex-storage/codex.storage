@@ -3,10 +3,10 @@ import React, { useEffect } from 'react'
 
 const Fathom = () => {
   const location = useLocation()
-  console.log(location.pathname)
 
   const siteIdByPathname = (pathname: string) => {
-    switch (pathname) {
+    const normalizedPathname = pathname.replace(/\/$/, '')
+    switch (normalizedPathname) {
       case '/secure-ethereum-scalability': // 1
         return 'MMVYR'
       case '/secure-cloudless-storage': // 2
