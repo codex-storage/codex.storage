@@ -1,0 +1,178 @@
+---
+title: Codex | Enhance Ethereum's Archival Data Storage
+description: Codex offers secure archival data storage and persistence for Ethereum, ensuring your data remains accessible and durable.
+---
+
+import {
+  Hero,
+  HeroTitle,
+  HeroDescription,
+  HeroActions,
+  HeroAction,
+  HeroAsset,
+  CallToActionSection,
+  AccordionItem,
+  HeroInfo,
+  Box,
+  Grid,
+  InputCTASection,
+  TableView,
+  NumbersView,
+} from '../components/mdx'
+import { Button } from '@acid-info/lsd-react'
+import Link from '@docusaurus/Link'
+import Head from '@docusaurus/Head'
+import Fathom from '../components/Fathom'
+
+<Fathom />
+
+<Hero size="large" verticalAlign="center">
+  <HeroInfo hideScrollToBottom>
+    <HeroTitle uppercase={false}>
+      Enhance Ethereum's Archival Data Storage
+    </HeroTitle>
+    <HeroDescription>
+      Codex offers secure archival data storage and persistence for Ethereum, ensuring your data remains accessible and durable.
+    </HeroDescription>
+    <HeroActions>
+      <HeroAction className="test-cta" href="https://discord.gg/codex-storage" target="_blank">
+        Sign Up for More Information
+      </HeroAction>
+    </HeroActions>
+  </HeroInfo>
+  <HeroAsset>
+    <video preload="auto" autoPlay loop muted autoPlay playsInline>
+       <source src="/hero/hero-video.mov" type='video/mp4; codecs="hvc1"' />
+       <source src="/hero/hero-video.webm" type="video/webm" />
+    </video>
+  </HeroAsset>
+</Hero>
+
+
+<Box top={{ xs: 0, lg: 214 }}>
+  <TableView
+    tableTitle="Overview"
+    data={[
+      {
+        title: 'The Challenge',
+        description:
+          "The introduction of data sampling (‘data blob’) with the implementation of EIP-4844 is a step towards solving the scalability of the Ethereum Network, but dependence on external data availability introduces security risks for rollups and their dapp ecosystem.",
+      },
+      {
+        title: 'Our Solution',
+        description:
+          'Codex offers secure data storage and persistence for Ethereum, ensuring your data remains accessible and durable.',
+      },
+    ]}
+  />
+</Box>
+
+<Box top={{ xs: 144, lg: 190 }}>
+  <CallToActionSection
+    title="How it works"
+    columns={1}
+    border={false}
+    align="center"
+    description={
+      <>
+        Codex's innovative data sampling technique ensures that Ethereum's scalability is enhanced without compromising on data persistence and security. Our solution mitigates the risks associated with external data availability, making rollups and dapp ecosystems more secure.
+      </>
+    }
+    label="Get Codex"
+    href="/about"
+  />
+</Box>
+
+<Box top={{ xs: 214 }}>
+  <NumbersView
+    sectionTitle="Why Choose Codex"
+    buttonText="Learn More"
+    buttonLink="/about"
+    data={[
+      {
+        title: 'Secure data availability',
+      },
+      {
+        title: 'Improved scalability',
+      },
+      {
+        title: 'Reduced security risks for rollups',
+      },
+    ]}
+  />
+</Box>
+
+<Box top={{ xs: 144, lg: 190 }}>
+  <CallToActionSection
+    title="Logos Collective"
+    columns={1}
+    border={false}
+    align="center"
+    description={
+      <>
+        Codex is powering the data storage layer of the Logos technology stack. Logos is a grassroots movement, building the infrastructure for trust-minimised, corruption-resistant governing services and social institutions for peaceful people worldwide.
+        <br/>
+        <br/>
+        Learn more about our ambitious vision.  
+      </>
+    }
+    label="Explore Logos"
+    href="https://logos.co/"
+    target="_blank"
+  />
+</Box>
+
+<Box top={{ xs: 144, lg: 190 }}>
+
+<h2>Frequently Asked Questions</h2>
+
+<AccordionItem title="How does Codex improve Ethereum's scalability?">
+  Codex is a state-of-the-art, decentralized storage protocol that provides a solution for highly durable data storage with high decentralization, aiming to resist censorship and prevent single points of failure inherent in centralized systems.
+</AccordionItem>
+
+<AccordionItem title="What security benefits does Codex provide for rollups?">
+  Unlike centralized systems, Codex is designed to offer data durability, resiliency to cloud failures, and censorship resistance, making it vital for use cases like preserving factual history records.
+</AccordionItem>
+
+</Box>
+
+<Box top={{ xs: 152, lg: 300 }}>
+  <Grid
+    xs={{ cols: 1, gap: '1rem' }}
+    md={{ cols: 2 }}
+    className='bottom-cta-sections'
+  >
+    <Grid.Item xs={1}>
+      <InputCTASection
+        description={
+          'Get Started with Codex.'
+        }
+        link="https://discord.gg/codex-storage"
+        label="Sign Up for More Information"
+      />
+    </Grid.Item>
+    <Grid.Item xs={1}>
+      <InputCTASection
+        description={'Subscribe\nto our newsletter'}
+        label="Subscribe"
+        formInput={[
+          {
+            label: 'Name',
+            placeholder: 'Name',
+            type: 'text',
+            name: 'name',
+            required: true,
+          },
+          {
+            label: 'Email',
+            placeholder: 'Enter your email',
+            type: 'email',
+            name: 'email',
+            required: true,
+          },
+        ]}
+        formListId={3}
+      />
+    </Grid.Item>
+  </Grid>
+</Box>
