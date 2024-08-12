@@ -119,6 +119,7 @@ html {
 @media screen and (max-width: 500px) {
   .mdx-hero {
     margin-bottom: -100px;
+    min-height: 700px;
   }
 
   .mdx-hero > .mdx-hero-asset video {
