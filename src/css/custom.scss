@@ -134,5 +134,9 @@ html {
 }
 
 .bottom-cta-sections > div:last-of-type > div:first-of-type .lsd-button {
+  display: none;
+}
+
+.bottom-cta-sections > div:last-of-type > div:last-of-type .lsd-button {
   width: unset !important;
 }
