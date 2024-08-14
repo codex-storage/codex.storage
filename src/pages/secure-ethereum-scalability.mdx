@@ -35,7 +35,7 @@ import Fathom from '../components/Fathom'
       Codex offers secure archival data storage and persistence for Ethereum, ensuring your data remains accessible and durable.
     </HeroDescription>
     <HeroActions>
-      <HeroAction className="test-cta" href="https://discord.gg/codex-storage" target="_blank">
+      <HeroAction className="test-cta" href="#bottom-cta">
         Sign Up for More Information
       </HeroAction>
     </HeroActions>
@@ -49,7 +49,7 @@ import Fathom from '../components/Fathom'
 </Hero>
 
 
-<Box top={{ xs: 0, lg: 214 }}>
+<Box top={{ xs: 0, lg: 20 }}>
   <TableView
     tableTitle="Overview"
     data={[
@@ -86,8 +86,6 @@ import Fathom from '../components/Fathom'
 <Box top={{ xs: 214 }}>
   <NumbersView
     sectionTitle="Why Choose Codex"
-    buttonText="Learn More"
-    buttonLink="/about"
     data={[
       {
         title: 'Secure data availability',
@@ -99,26 +97,6 @@ import Fathom from '../components/Fathom'
         title: 'Reduced security risks for rollups',
       },
     ]}
-  />
-</Box>
-
-<Box top={{ xs: 144, lg: 190 }}>
-  <CallToActionSection
-    title="Logos Collective"
-    columns={1}
-    border={false}
-    align="center"
-    description={
-      <>
-        Codex is powering the data storage layer of the Logos technology stack. Logos is a grassroots movement, building the infrastructure for trust-minimised, corruption-resistant governing services and social institutions for peaceful people worldwide.
-        <br/>
-        <br/>
-        Learn more about our ambitious vision.  
-      </>
-    }
-    label="Explore Logos"
-    href="https://logos.co/"
-    target="_blank"
   />
 </Box>
 
@@ -141,6 +119,7 @@ import Fathom from '../components/Fathom'
     xs={{ cols: 1, gap: '1rem' }}
     md={{ cols: 2 }}
     className='bottom-cta-sections'
+    id="bottom-cta"
   >
     <Grid.Item xs={1}>
       <InputCTASection
