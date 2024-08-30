@@ -69,9 +69,19 @@ function getQueryParam(param) {
 
 let utmSource = getQueryParam('utm_source');
 
+const currentUrl = window.location.href;
+console.log(\`current url - \${currentUrl}\`);
+const virtualPath = \`\${currentUrl}_form_submission_\${utmSource}\` 
+
 if (utmSource) {
     console.log(\`utm - \${utmSource}\`);
+    console.log(\`virtual path - \${virtualPath}\`);
+
     fathom.trackEvent(\`form submission - \${utmSource}\`);
+
+    fathom.trackPageview({
+        url: virtualPath
+    });
 }
 `
     document.body.appendChild(script)
