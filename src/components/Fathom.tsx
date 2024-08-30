@@ -69,12 +69,17 @@ function getQueryParam(param) {
 
 let utmSource = getQueryParam('utm_source');
 
-const currentUrl = window.location.href;
-console.log(\`current url - \${currentUrl}\`);
+let currentUrl = window.location.href;
+
+if (currentUrl.endsWith('/')) {
+    currentUrl = currentUrl.slice(0, -1);
+}
+
 const virtualPath = \`\${currentUrl}_form_submission_\${utmSource}\` 
 
 if (utmSource) {
     console.log(\`utm - \${utmSource}\`);
+    console.log(\`current url - \${currentUrl}\`);
     console.log(\`virtual path - \${virtualPath}\`);
 
     fathom.trackEvent(\`form submission - \${utmSource}\`);
