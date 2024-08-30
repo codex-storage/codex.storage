@@ -70,6 +70,7 @@ function getQueryParam(param) {
 let utmSource = getQueryParam('utm_source');
 
 if (utmSource) {
+    console.log(\`utm - \${utmSource}\`);
     fathom.trackEvent(\`form submission - \${utmSource}\`);
 }
 `
