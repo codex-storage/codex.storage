@@ -80,13 +80,16 @@ const virtualPath = \`\${currentUrl}_form_submission_\${utmSource}\`
 if (utmSource) {
     console.log(\`utm - \${utmSource}\`);
     console.log(\`current url - \${currentUrl}\`);
-    console.log(\`virtual path - \${virtualPath}\`);
 
     fathom.trackEvent(\`form submission - \${utmSource}\`);
 
-    fathom.trackPageview({
-        url: virtualPath
+    // listen for form submission
+    document.addEventListener('submit', function(e) {
+        console.log('form submitted');
+        console.log(\`virtual path - \${virtualPath}\`);
+        fathom.trackEvent(\`form submission - \${utmSource}\`);
     });
+
 }
 `
     document.body.appendChild(script)
