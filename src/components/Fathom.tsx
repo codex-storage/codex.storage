@@ -67,7 +67,7 @@ function getQueryParam(param) {
     return params.get(param);
 }
 
-let utmSource = getQueryParam('utm_source');
+const utmSource = getQueryParam('utm_source');
 
 let currentUrl = window.location.href;
 
@@ -80,23 +80,28 @@ const virtualPath = \`\${currentUrl}_form_submission_\${utmSource}\`
 const form = document.querySelector('.mdx-input-cta-section__form');
 
 if (utmSource) {
+    // Log UTM source and current URL
     console.log(\`utm - \${utmSource}\`);
     console.log(\`current url - \${currentUrl}\`);
 
-    // Needs paid plan
+    // Needs a paid plan
     // fathom.trackEvent(\`form submission - \${utmSource}\`);
     
     // listen for form submission
     if (form) {
         form.addEventListener('submit', function(e) {
             e.preventDefault();
+
             console.log('form submitted');
             console.log(\`virtualPath - \${virtualPath}\`);
-            fathom.trackEvent(\`form submission - \${utmSource}\`);
+
+            // Log form submission
+            fathom.trackPageview({
+                url: virtualPath,
+            });
         });
     }
-}
-`
+}`
     document.body.appendChild(script)
 
     return () => {
