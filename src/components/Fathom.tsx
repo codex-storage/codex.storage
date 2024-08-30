@@ -60,7 +60,19 @@ const Fathom = () => {
 	m.parentNode.insertBefore(o,m)
 })(document, window, '//fathom.bi.status.im/tracker.js', 'fathom');
 fathom('set', 'siteId', '${siteIdByPathname(location.pathname)}');
-fathom('trackPageview');`
+fathom('trackPageview');
+
+function getQueryParam(param) {
+    let params = new URLSearchParams(window.location.search);
+    return params.get(param);
+}
+
+let utmSource = getQueryParam('utm_source');
+
+if (utmSource) {
+    fathom.trackEvent(\`form submission - \${utmSource}\`);
+}
+`
     document.body.appendChild(script)
 
     return () => {
