@@ -71,8 +71,8 @@ $ yarn serve
 
 ## CI/CD
 
-- [CI builds](https://ci.infra.status.im/job/website/job/codex.storage/) `master` and pushes to `deploy-master` branch, which is hosted at <https://codex.storage//>.
-- [CI builds](https://ci.infra.status.im/job/website/job/dev.codex.storage/) `develop` and pushes to `deploy-develop` branch, which is hosted at <https://dev.codex.storage//>.
+- [CI builds](https://ci.infra.status.im/job/website/job/codex.storage/) `master` and pushes to `deploy-master` branch, which is hosted at <https://codex.storage/>.
+- [CI builds](https://ci.infra.status.im/job/website/job/dev.codex.storage/) `develop` and pushes to `deploy-develop` branch, which is hosted at <https://dev.codex.storage/>.
 
 The hosting is done using [Caddy server with Git plugin for handling GitHub webhooks](https://github.com/status-im/infra-misc/blob/master/ansible/roles/caddy-git).
 
