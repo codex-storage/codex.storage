@@ -52,24 +52,15 @@ html {
   position: absolute;
   right: 0;
   top: 0;
-  margin-top: -40%;
+  height: 95vh;
+  margin-top: -65%;
+  max-height: 900px;
 }
 
-@media screen and (min-width: 996px) {
+@media screen and (min-width: 1920px) {
   .mdx-hero > .mdx-hero-asset video {
-    position: absolute;
-    right: 0;
-    top: 0;
-    margin-right: -240px;
-    margin-top: -50%;
-    scale: 0.95;
+    margin-top: -65%;
   }
-}
-.mdx-hero > .mdx-hero-asset video {
-  position: absolute;
-  right: 0;
-  top: 0;
-  margin-top: -40%;
 }
 
 @media screen and (min-width: 996px) {
@@ -78,7 +69,6 @@ html {
     right: 0;
     top: 32px;
     margin-right: -280px;
-    margin-top: -55%;
     scale: 0.9;
   }
 }
@@ -99,6 +89,7 @@ html {
 @media screen and (max-width: 930px) {
   .mdx-hero {
     margin-bottom: 280px;
+    min-height: 100vh;
   }
 
   .mdx-hero > .mdx-hero-asset video {
@@ -106,13 +97,20 @@ html {
     margin-left: unset;
     margin: 0 auto;
     width: -webkit-fill-available;
-    margin-top: -10%;
+    margin-top: -20%;
+    height: unset;
+    scale: 0.6;
   }
 }
 
 @media screen and (max-width: 768px) {
   .mdx-hero {
     margin-bottom: 100px;
+  }
+
+  .mdx-hero > .mdx-hero-asset video {
+    margin-top: -10%;
+    scale: 0.8;
   }
 }
 
