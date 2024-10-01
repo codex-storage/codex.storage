@@ -55,6 +55,13 @@ html {
   margin-top: -40%;
 }
 
+.hero-note {
+  font-style: italic;
+  font-size: 14px;
+  margin-top: 24px;
+  max-width: 500px;
+}
+
 @media screen and (min-width: 996px) {
   .mdx-hero > .mdx-hero-asset video {
     position: absolute;
@@ -87,7 +94,7 @@ html {
   .mdx-hero > .mdx-hero-asset video {
     margin-right: -200px;
     margin-left: 0;
-    scale: 0.9;
+    scale: 0.7;
     margin-top: -36%;
   }
 
@@ -106,20 +113,24 @@ html {
     margin-left: unset;
     margin: 0 auto;
     width: -webkit-fill-available;
-    margin-top: -10%;
+    margin-top: -16%;
   }
 }
 
 @media screen and (max-width: 768px) {
   .mdx-hero {
-    margin-bottom: 100px;
+    margin-bottom: 160px;
+  }
+
+  .mdx-hero > .mdx-hero-asset video {
+    scale: 0.8;
   }
 }
 
 @media screen and (max-width: 500px) {
   .mdx-hero {
-    margin-bottom: -100px;
     min-height: 700px;
+    margin-bottom: 100px;
   }
 
   .mdx-hero > .mdx-hero-asset video {
