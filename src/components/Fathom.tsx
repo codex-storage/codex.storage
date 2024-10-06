@@ -83,7 +83,7 @@ const Fathom = () => {
     const form = document.querySelector('.mdx-input-cta-section__form')
 
     if (form) {
-      form.addEventListener('click', function(e) {
+      form.addEventListener('submit', function(e) {
         e.preventDefault()
 
         const utmSource = new URLSearchParams(window.location.search).get(
