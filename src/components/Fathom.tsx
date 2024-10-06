@@ -1,10 +1,18 @@
 import { useLocation } from '@docusaurus/router'
 import React, { useEffect } from 'react'
 
+// define fathom type globally
+
+declare global {
+  interface Window {
+    fathom: (command: string, ...rest: any[]) => void
+  }
+}
+
 const Fathom = () => {
   const location = useLocation()
 
-  const siteIdByPathname = (pathname: string) => {
+  const siteIdByPathname = pathname => {
     const normalizedPathname = pathname.replace(/\/$/, '')
     switch (normalizedPathname) {
       case '/secure-ethereum-scalability': // 1
@@ -49,65 +57,68 @@ const Fathom = () => {
   }
 
   useEffect(() => {
-    const script = document.createElement('script')
-    script.innerHTML = `(function(f, a, t, h, o, m){
-	a[h]=a[h]||function(){
-		(a[h].q=a[h].q||[]).push(arguments)
-	};
-	o=f.createElement('script'),
-	m=f.getElementsByTagName('script')[0];
-	o.async=1; o.src=t; o.id='fathom-script';
-	m.parentNode.insertBefore(o,m)
-})(document, window, '//fathom.bi.status.im/tracker.js', 'fathom');
-fathom('set', 'siteId', '${siteIdByPathname(location.pathname)}');
-fathom('trackPageview');
+    const existingScript = document.getElementById('fathom-script')
 
-function getQueryParam(param) {
-    let params = new URLSearchParams(window.location.search);
-    return params.get(param);
-}
-
-const utmSource = getQueryParam('utm_source');
-
-let currentUrl = window.location.href;
-
-if (currentUrl.endsWith('/')) {
-    currentUrl = currentUrl.slice(0, -1);
-}
-
-const virtualPath = \`\${currentUrl}_form_submission_\${utmSource}\` 
-
-const form = document.querySelector('.mdx-input-cta-section__form');
-
-if (utmSource) {
-    // Log UTM source and current URL
-    console.log(\`utm - \${utmSource}\`);
-    console.log(\`current url - \${currentUrl}\`);
-
-    // Needs a paid plan
-    // fathom.trackEvent(\`form submission - \${utmSource}\`);
-    
-    // listen for form submission
-    if (form) {
-        form.addEventListener('submit', function(e) {
-            e.preventDefault();
-
-            console.log('form submitted');
-            console.log(\`virtualPath - \${virtualPath}\`);
-
-            // Log form submission
-            fathom.trackPageview({
-                url: virtualPath,
-            });
-        });
+    if (existingScript) {
+      document.body.removeChild(existingScript)
     }
-}`
+
+    const script = document.createElement('script')
+    script.id = 'fathom-script'
+
+    script.innerHTML = `(function(f, a, t, h, o, m){
+      a[h] = a[h] || function() {
+        (a[h].q = a[h].q || []).push(arguments)
+      };
+      o = f.createElement('script'),
+      m = f.getElementsByTagName('script')[0];
+      o.async = 1; o.src = t; o.id = 'fathom-script';
+      m.parentNode.insertBefore(o, m)
+    })(document, window, '//fathom.bi.status.im/tracker.js', 'fathom');
+    fathom('set', 'siteId', '${siteIdByPathname(location.pathname)}');
+    fathom('trackPageview');`
+
     document.body.appendChild(script)
 
-    return () => {
-      document.body.removeChild(script)
+    const form = document.querySelector('.mdx-input-cta-section__form')
+
+    if (form) {
+      form.addEventListener('click', function(e) {
+        e.preventDefault()
+
+        const utmSource = new URLSearchParams(window.location.search).get(
+          'utm_source',
+        )
+
+        let currentUrl = window.location.href
+
+        if (currentUrl.endsWith('/')) {
+          currentUrl = currentUrl.slice(0, -1)
+        }
+
+        const virtualPath = `${currentUrl}_form_submission_${utmSource}`
+
+        if (utmSource) {
+          console.log(`utm - ${utmSource}`)
+          console.log(`current url - ${currentUrl}`)
+          console.log('form submitted')
+          console.log(`virtualPath - ${virtualPath}`)
+
+          // Track form submission using Fathom
+          window.fathom('trackPageview', {
+            url: virtualPath,
+          })
+        }
+      })
     }
-  }, [])
+
+    return () => {
+      const scriptToRemove = document.getElementById('fathom-script')
+      if (scriptToRemove) {
+        document.body.removeChild(scriptToRemove)
+      }
+    }
+  }, [location.pathname])
 
   return <></>
 }
