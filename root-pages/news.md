@@ -7,6 +7,77 @@ pagination_prev: null
 pagination_next: null
 ---
 
+# **Codex R&D Update for Week of April 30, 2024**
+
+>The Codex team wrapped up a successful demo at the Logos off-site and now aims to prepare the demo for the Q2 public testnet release potentially coinciding with EthCC.
+>
+>An internal devnet has been running for the past few weeks and has been used to test the latest version of Codex and can be accessed using the [Codex Testnet Starter](https://zkmesh.substack.com/p/zkmesh-apr-2024-recap) documentation.
+
+# **Development**
+
+Development is currently broken into three distinct teams:
+
+1. Client, Testing, and Infrastructure
+2. Marketplace
+3. Research
+
+The following are their team updates.
+
+# **Client, Testing and Infrastructure**
+
+  Completed
+
+- None
+
+Ongoing
+
+  - Splitting two big PRs into a series of smaller ones
+
+    - [Expiry per dataset](https://github.com/codex-storage/nim-codex/pull/678)
+    - [Safe block deletion (with ref count)](https://github.com/codex-storage/nim-codex/pull/631)
+
+  - Reviewing various PRs in the client
+
+  # **Marketplace**
+
+  Completed
+
+- Tokenomics meeting to discuss existing questions, as well as the new slot reservations proposal
+- Discussion about the slot reservations proposal, in which we came up with a simplified version, opting to allow for emergent behaviors before adding to complexity
+- Discussion about fill reward curve
+- Discussion about the new slot reservations proposal
+- Reviews :
+  - [codex-storage/nim-codex#793](codex-storage/nim-codex#793)
+   - [codex-storage codex-contracts-eth#99](codex-storage/codex-contracts-eth#99)
+
+Ongoing
+
+- Writing out new proposal for slot reservations as well as capturing the original bloem method idea
+- Tokenomics & Marketplace proposal discussions
+
+#  **Research**
+
+>2024 R&D Goals:
+>1. Proving system and aggregation improvements (folding or lookups)
+>2. Aggregator/validator design
+>3. DHT improvements
+>4. Tokenomics and incentive design
+>5. Bandwidth incentives
+>6. Dynamic data (appendable data)
+>7. Encryption
+
+Completed
+
+- Discussion with marketplace team about slot fill reward and address window expansion curves
+  
+Ongoing
+
+- Studying various FFT/NTT algorithms
+- [Looking at new research](https://zkmesh.substack.com/p/zkmesh-apr-2024-recap)
+- Looking a bit into the recent "Foreign Arithmetic" (SigmaBus) paper. Unfortunately it seems to be much less useful for us than originally thought.
+  
+***
+
 # **Codex R&D Update for Week of Jan 12, 2024**
 
 >The Codex team continues to make progress with various initiatives to wrap up the demo for the Q1/Q2 public testnet release. An internal testnet has been running for the past few weeks and has been used to test the latest version of Codex and can be accessed using the Codex Testnet Starter documentation.
