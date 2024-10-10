@@ -62,4 +62,4 @@ When the contract is reposted, some of the faulty node's collateral pays for the
 
 <br/>
 
-[Read the Codex whitepaper](/codex-whitepaper.pdf)
+[Read the Codex whitepaper](https://docs.codex.storage/learn/whitepaper)
