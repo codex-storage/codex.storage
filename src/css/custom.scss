@@ -48,11 +48,17 @@ html {
   text-decoration: none !important;
 }
 
+.mdx-box h2 {
+  font-size: var(--lsd-h1-fontSize) !important;
+  line-height: var(--lsd-h1-lineHeight) !important;
+}
+
 .mdx-hero > .mdx-hero-asset video {
   position: absolute;
   right: 0;
   top: 0;
   margin-top: -40%;
+  width: 80%;
 }
 
 .hero-note {
@@ -60,6 +66,19 @@ html {
   font-size: 14px;
   margin-top: 24px;
   max-width: 500px;
+}
+
+#overview {
+  h2 {
+    font-size: 18px !important;
+    line-height: 24px !important;
+  }
+
+  h3 {
+    font-family: Helvetica;
+    font-size: 40px !important;
+    line-height: 48px !important;
+  }
 }
 
 @media screen and (min-width: 996px) {
