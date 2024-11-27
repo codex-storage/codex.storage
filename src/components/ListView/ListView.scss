@@ -1,7 +1,7 @@
 .mdx-list-view {
   width: 100%;
   display: flex;
-  gap: 16px;
+  gap: 84px;
   padding-top: 24px;
 }
 
@@ -35,12 +35,12 @@
 
 .mdx-list-view-section-title {
   margin-bottom: 24px;
+  max-width: 460px;
 }
 
 .mdx-list-view-row {
   display: flex;
   flex-direction: column;
-  gap: 16px;
 }
 
 .mdx-list-view-number {
@@ -57,10 +57,13 @@
   line-height: 16px;
   color: rgb(var(--lsd-text-secondary)) !important;
   background-color: rgb(var(--lsd-surface-secondary)) !important;
+
+  margin-bottom: 16px;
 }
 
 .mdx-list-view-title {
   width: 100%;
+  margin-bottom: 16px;
 }
 
 .mdx-list-view-header-title {
