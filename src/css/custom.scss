@@ -48,9 +48,18 @@ html {
   text-decoration: none !important;
 }
 
+.mdx-box .mdx-cta-section {
+  padding-top: 0;
+}
+
 .mdx-box h2 {
   font-size: var(--lsd-h1-fontSize) !important;
   line-height: var(--lsd-h1-lineHeight) !important;
+
+  @media screen and (max-width: 500px) {
+    font-size: var(--lsd-h3-fontSize) !important;
+    line-height: var(--lsd-h3-lineHeight) !important;
+  }
 }
 
 .mdx-hero > .mdx-hero-asset video {
@@ -68,6 +77,16 @@ html {
   max-width: 500px;
 }
 
+@media (min-width: 997px) {
+  .main-wrapper .container {
+    padding-bottom: 280px;
+  }
+}
+
+.main-wrapper .container {
+  padding-bottom: 220px;
+}
+
 #overview {
   h2 {
     font-size: 18px !important;
@@ -79,18 +98,105 @@ html {
     font-size: 40px !important;
     line-height: 48px !important;
   }
-}
 
-@media screen and (min-width: 996px) {
-  .mdx-hero > .mdx-hero-asset video {
-    position: absolute;
-    right: 0;
-    top: 0;
-    margin-right: -240px;
-    margin-top: -50%;
-    scale: 0.95;
+  @media screen and (max-width: 500px) {
+    .mdx-table-view-row {
+      gap: 24px !important;
+    }
+
+    h3 {
+      font-size: 28px !important;
+      line-height: 36px !important;
+    }
+
+    p {
+      font-size: 14px !important;
+      line-height: 20px !important;
+    }
   }
 }
+
+.showcase-cards {
+  .mdx-showcase-card__inner {
+    padding-top: 16px;
+    gap: 0;
+  }
+  .mdx-showcase-card__index {
+    display: none;
+  }
+}
+
+.grants {
+  .mdx-section-header {
+    flex-direction: column;
+    gap: 32px;
+    padding-top: 0;
+  }
+
+  .mdx-section-header__extra {
+    margin-top: 48px !important;
+  }
+
+  h4 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .mdx-showcase-card__description {
+    padding-top: 0;
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  @media screen and (max-width: 500px) {
+    .mdx-section-header {
+      gap: 24px !important;
+    }
+
+    .mdx-section-header__description {
+      font-size: var(--lsd-body2-fontSize) !important;
+      line-height: var(--lsd-body2-lineHeight) !important;
+    }
+
+    .mdx-section-header__extra {
+      margin-top: 40px !important;
+    }
+
+    .mdx-showcase-card__inner > h4 {
+      font-size: var(--lsd-subtitle3-fontSize) !important;
+      line-height: var(--lsd-subtitle3-lineHeight) !important;
+    }
+
+    .mdx-showcase-card__inner .mdx-showcase-card__description {
+      font-size: var(--lsd-h4-fontSize) !important;
+      line-height: var(--lsd-h4-lineHeight) !important;
+    }
+  }
+}
+
+#vision {
+  h3 {
+    display: none;
+  }
+
+  p {
+    font-family: Helvetica;
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .mdx-table-view-row {
+    padding-bottom: 0;
+  }
+
+  @media screen and (max-width: 500px) {
+    h2 {
+      font-size: var(--lsd-subtitle1-fontSize) !important;
+      line-height: var(--lsd-subtitle1-lineHeight) !important;
+    }
+  }
+}
+
 .mdx-hero > .mdx-hero-asset video {
   position: absolute;
   right: 0;
@@ -150,13 +256,31 @@ html {
 
 @media screen and (max-width: 500px) {
   .mdx-hero {
-    min-height: 700px;
-    margin-bottom: 100px;
+    height: 500px !important;
+    min-height: unset !important;
   }
 
   .mdx-hero > .mdx-hero-asset video {
     margin-top: -5%;
-    scale: 0.8;
+    scale: 1.2;
+  }
+
+  .mdx-showcase-card__inner > .mdx-showcase-card__name {
+    font-size: var(--lsd-h5-fontSize) !important;
+    line-height: var(--lsd-h5-lineHeight) !important;
+  }
+
+  .mdx-showcase-card__inner > .mdx-showcase-card__description {
+    font-size: var(--lsd-subtitle3-fontSize) !important;
+    line-height: var(--lsd-subtitle3-lineHeight) !important;
+  }
+
+  .mdx-showcase-card__description {
+    padding-top: 0 !important;
+  }
+
+  .mdx-grid__content form .mdx-input-cta-section__cta {
+    width: 155px !important;
   }
 }
 
@@ -164,12 +288,4 @@ html {
   width: 100%;
   flex-basis: unset !important;
   text-decoration: none;
-}
-
-.bottom-cta-sections > div:last-of-type > div:first-of-type .lsd-button {
-  display: none;
-}
-
-.bottom-cta-sections > div:last-of-type > div:last-of-type .lsd-button {
-  width: unset !important;
 }

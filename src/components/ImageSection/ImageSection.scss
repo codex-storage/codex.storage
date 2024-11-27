@@ -2,8 +2,6 @@
   display: grid;
   border-top: 1px solid rgb(var(--lsd-border-primary));
 
-  padding: 24px 0 0 0;
-
   .mdx-image-section__video-container {
     grid-column: 8 / 17;
     position: relative;
@@ -15,9 +13,6 @@
     position: absolute;
     top: 0;
     left: 0;
-  }
-
-  .mdx-image-section__video {
   }
 
   .mdx-image-section__link {
@@ -199,5 +194,21 @@
   }
 
   .mdx-image-section__link {
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mdx-image-section--list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .mdx-image-section__link {
+    margin-top: 24px !important;
+  }
+
+  .mdx-image-section__description {
+    margin-top: 24px;
   }
 }

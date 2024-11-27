@@ -18,6 +18,8 @@ import {
   InputCTASection,
   TableView,
   NumbersView,
+  ShowcaseCard,
+  SectionHeader,
 } from '../components/mdx'
 import { Button } from '@acid-info/lsd-react'
 import { ListView } from '../components/ListView'
@@ -72,7 +74,7 @@ import { ImageSection } from '../components/ImageSection'
   />
 </Box>
 
-<Box top={{ xs: 144, lg: 190 }}>
+<Box top={{ xs: 148, lg: 190 }}>
   <CallToActionSection
     title="How it works"
     columns={1}
@@ -83,10 +85,12 @@ import { ImageSection } from '../components/ImageSection'
         Codex's innovative data sampling technique ensures that Ethereum's scalability is enhanced without compromising on data persistence and security. Our solution mitigates the risks associated with external data availability, making rollups and dapp ecosystems more secure.
       </>
     }
+    href="/about"
+    label="Get Codex"
   />
 </Box>
 
-<Box top={{ xs: 214 }}>
+<Box top={{ xs: 148, lg: 214 }}>
   <ListView
     title="Overview"
     sectionTitle="Storage Designed for Web3"
@@ -122,7 +126,7 @@ import { ImageSection } from '../components/ImageSection'
   />
 </Box>
 
-<Box top={{ xs: 214 }}>
+<Box top={{ xs: 148, lg: 214 }}>
   <NumbersView
     sectionTitle="Why Choose Codex"
     buttonLink='#bottom-cta'
@@ -140,7 +144,7 @@ import { ImageSection } from '../components/ImageSection'
   />
 </Box>
 
-<Box top={{ xs: 214 }}>
+<Box top={{ xs: 148, lg: 214 }}>
   <ImageSection
     title={<>Network Architecture</>}
     description={
@@ -153,9 +157,83 @@ import { ImageSection } from '../components/ImageSection'
     href="/about"
     src="/hero/network-architecture.png"
   />
+  <Box top={{ xs: 56, lg: 96 }} className='showcase-cards'>
+    <Grid
+      xs={{ cols: 1, wrap: true, gap: '24px' }}
+      lg={{ cols: 3, gap: '16px' }}
+    >
+      <Grid.Item>
+        <ShowcaseCard
+          index={1}
+          name="Storage nodes"
+          description="As Codex's long-term reliable storage providers, storage nodes stake collateral based on the collateral posted on the request side of contracts, and the number of slots that a contract has. This is tied to the durability demanded by the user. Failure to provide periodic proof of data possession results in slashing penalties."
+          borderStyle="none"
+        />
+      </Grid.Item>
+      <Grid.Item>
+        <ShowcaseCard
+          index={2}
+          name="Aggregator Node"
+          description="A method for off-loading erasure coding, proof generation and proof aggregation by a client node with low-resources, currently a WIP and will be part of subsequent Codex release Q2/Q4 next year."
+          borderStyle="none"
+        />
+      </Grid.Item>
+      <Grid.Item>
+        <ShowcaseCard
+          index={3}
+          name="Client nodes"
+          description="Client nodes make requests for other nodes to store, find, and retrieve data. Most of the Codex network will be Client nodes, and these participants can double as caching nodes to offset the cost of the network resources they consume."
+          borderStyle="none"
+        />
+      </Grid.Item>
+    </Grid>
+  </Box>
 </Box>
 
-<Box top={{ xs: 144, lg: 190 }}>
+<Box top={{ xs: 148, lg: 214 }} className='grants'>
+  <SectionHeader noBorder title="Grants" description="Codex ecosystem is looking to fund talented and eager developer teams that want to build the future of the web."></SectionHeader>
+  <Box className='showcase-cards'>
+    <Grid
+      xs={{ cols: 2, wrap: true, gap: '16px' }}
+      lg={{ cols: 4, gap: '16px' }}
+    >
+      <Grid.Item>
+        <ShowcaseCard
+          index={1}
+          name="Number of projects to date"
+          description="400"
+          borderStyle="none"
+        />
+      </Grid.Item>
+      <Grid.Item>
+        <ShowcaseCard
+          index={2}
+          name="Total awarded to date"
+          description="$4+ million"
+          borderStyle="none"
+        />
+      </Grid.Item>
+      <Grid.Item>
+        <ShowcaseCard
+          index={3}
+          name="Total awarded to date"
+          description="$4+ million"
+          borderStyle="none"
+        />
+      </Grid.Item>
+      <Grid.Item>
+        <ShowcaseCard
+          index={3}
+          name="Number of projects to date"
+          description="400"
+          borderStyle="none"
+        />
+      </Grid.Item>
+    </Grid>
+  </Box>
+</Box>
+
+<Box top={{ xs: 148, lg: 214 }}>
   <CallToActionSection
     title="Logos Collective"
     columns={1}
@@ -175,21 +253,33 @@ import { ImageSection } from '../components/ImageSection'
   />
 </Box>
 
-<Box top={{ xs: 144, lg: 190 }}>
+<Box top={{ xs: 148, lg: 214 }}>
+  <h2>Frequently Asked Questions</h2>
 
-<h2>Frequently Asked Questions</h2>
+  <AccordionItem title="How does Codex improve Ethereum's scalability?">
+    Codex is a state-of-the-art, decentralized storage protocol that provides a solution for highly durable data storage with high decentralization, aiming to resist censorship and prevent single points of failure inherent in centralized systems.
+  </AccordionItem>
 
-<AccordionItem title="How does Codex improve Ethereum's scalability?">
-  Codex is a state-of-the-art, decentralized storage protocol that provides a solution for highly durable data storage with high decentralization, aiming to resist censorship and prevent single points of failure inherent in centralized systems.
-</AccordionItem>
-
-<AccordionItem title="What security benefits does Codex provide for rollups?">
-  Unlike centralized systems, Codex is designed to offer data durability, resiliency to cloud failures, and censorship resistance, making it vital for use cases like preserving factual history records.
-</AccordionItem>
-
+  <AccordionItem title="What security benefits does Codex provide for rollups?">
+    Unlike centralized systems, Codex is designed to offer data durability, resiliency to cloud failures, and censorship resistance, making it vital for use cases like preserving factual history records.
+  </AccordionItem>
 </Box>
 
-<Box top={{ xs: 152, lg: 258 }}>
+<Box top={{ xs: 148, lg: 214 }}>
+  <TableView
+    id="vision"
+    tableTitle="Where we're headed"
+    data={[
+      {
+        title: '',
+        description:
+          "Building a blockchain is like building a software rocket – it is fundamentally hard, and takes extraordinary care to ensure launch is secure and stable. Check out these resources to learn about Filecoin’s development progress and how the network is approaching some extremely challenging problems in cryptography, distributed systems, and beyond.",
+      },
+    ]}
+  />
+</Box>
+
+<Box top={{ xs: 72 }}>
   <Grid
     xs={{ cols: 1, gap: '1rem' }}
     md={{ cols: 2 }}
@@ -201,20 +291,15 @@ import { ImageSection } from '../components/ImageSection'
         description={
           'Get Started with Codex.'
         }
+        link="/about"
+        label="Join Testnet"
       />
     </Grid.Item>
     <Grid.Item xs={1}>
       <InputCTASection
         description={'Subscribe\nto our newsletter'}
-        label="Sign Up for More Information"
+        label="Subscribe"
         formInput={[
-          {
-            label: 'Name',
-            placeholder: 'Name',
-            type: 'text',
-            name: 'name',
-            required: true,
-          },
           {
             label: 'Email',
             placeholder: 'Enter your email',
@@ -223,7 +308,7 @@ import { ImageSection } from '../components/ImageSection'
             required: true,
           },
         ]}
-        formListId={3}
+        buType={'codex'}
       />
     </Grid.Item>
   </Grid>

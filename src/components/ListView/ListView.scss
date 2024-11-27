@@ -18,6 +18,10 @@
   flex-direction: column;
   gap: 32px;
   width: 100%;
+
+  a {
+    width: fit-content;
+  }
 }
 
 .mdx-list-view-content {
@@ -27,6 +31,10 @@
   grid-gap: 32px 16px;
   flex-direction: column;
   width: 100%;
+}
+
+.mdx-list-view-section-title {
+  margin-bottom: 24px;
 }
 
 .mdx-list-view-row {
@@ -63,4 +71,21 @@
 .mdx-list-view-description {
   width: 100%;
   max-width: 460px;
+}
+
+@media (max-width: 768px) {
+  .mdx-list-view {
+    flex-direction: column;
+    gap: 72px;
+  }
+
+  .mdx-list-view-title {
+    font-size: var(--lsd-h5-fontSize) !important;
+    line-height: var(--lsd-h5-lineHeight) !important;
+  }
+
+  .mdx-list-view-description {
+    font-size: var(--lsd-subtitle3-fontSize) !important;
+    line-height: var(--lsd-subtitle3-lineHeight) !important;
+  }
 }
