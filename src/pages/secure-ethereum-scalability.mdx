@@ -25,6 +25,7 @@ import Link from '@docusaurus/Link'
 import Head from '@docusaurus/Head'
 import Fathom from '../components/Fathom'
 import { DarkModePage } from '../components/DarkModePage'
+import { ImageSection } from '../components/ImageSection'
 
 <DarkModePage>
 
@@ -136,6 +137,41 @@ import { DarkModePage } from '../components/DarkModePage'
         title: 'Reduced security risks for rollups',
       },
     ]}
+  />
+</Box>
+
+<Box top={{ xs: 214 }}>
+  <ImageSection
+    title={<>Network Architecture</>}
+    description={
+      <>
+        Codex is composed of multiple node types, each taking a different role in the network's operation. Similarly, the hardware demands for each node type vary, enabling those operating resource-restricted devices to participate.
+      </>
+    }
+    border={false}
+    label="Learn More"
+    href="/about"
+    src="/hero/network-architecture.png"
+  />
+</Box>
+
+<Box top={{ xs: 144, lg: 190 }}>
+  <CallToActionSection
+    title="Logos Collective"
+    columns={1}
+    border={false}
+    align="center"
+    description={
+      <>
+        Codex is powering the data storage layer of the Logos technology stack. Logos is a grassroots movement, building the infrastructure for trust-minimised, corruption-resistant governing services and social institutions for peaceful people worldwide.
+        <br/>
+        <br/>
+        Learn more about our ambitious vision.  
+      </>
+    }
+    label="Explore Logos"
+    href="https://logos.co/"
+    target="_blank"
   />
 </Box>
 
