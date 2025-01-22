@@ -134,12 +134,28 @@ const config = {
                 label: 'Discord',
               },
               {
-                href: 'https://docs.codex.storage',
-                label: 'Docs',
+                href: 'https://www.youtube.com/@CodexStorage',
+                label: 'YouTube',
+              },
+              {
+                href: 'https://www.linkedin.com/company/codexstorage/',
+                label: 'LinkedIn',
+              },
+              {
+                href: 'https://far.quest/codexstorage',
+                label: 'Farcaster',
               },
               {
                 href: 'https://blog.codex.storage',
                 label: 'Blog',
+              },
+            ],
+          },
+          {
+            items: [
+              {
+                href: 'https://docs.codex.storage',
+                label: 'Docs',
               },
               {
                 href: 'https://github.com/codex-storage',
@@ -157,6 +173,10 @@ const config = {
                 href: 'https://guide.codex.storage/',
                 label: 'Brand Guidelines',
               },
+            ],
+          },
+          {
+            items: [
               {
                 href: '/terms',
                 label: 'Terms & conditions',
