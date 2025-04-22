@@ -67,11 +67,10 @@ const config = {
       },
     ],
     [
-      '@acid-info/docusaurus-fathom',
+      '@acid-info/docusaurus-umami',
       {
-        siteId: 'OISNT',
-        scriptUrl: 'https://fathom.bi.status.im/tracker.js',
-        hostnames: ['codex.storage'],
+        websiteId: '31dab6fa-8450-4098-aa53-70cea9ae72cf',
+        scriptSrc: 'https://umami.bi.status.im/script.js',
       },
     ],
   ],
@@ -112,7 +111,7 @@ const config = {
           },
           {
             label: 'News',
-            to: 'https://codex.storage/news',
+            to: '/news',
           },
           {
             label: 'Join Us',
