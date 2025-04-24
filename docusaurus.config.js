@@ -71,6 +71,7 @@ const config = {
       {
         websiteId: '31dab6fa-8450-4098-aa53-70cea9ae72cf',
         scriptSrc: 'https://umami.bi.status.im/script.js',
+        dataDomains: 'codex.storage',
       },
     ],
   ],
