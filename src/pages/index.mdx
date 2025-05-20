@@ -38,8 +38,7 @@ import Link from '@docusaurus/Link'
       <HeroAction
         href="https://discord.gg/codex-storage"
         target="_blank"
-        data-umami-event="Join Testnet"
-        data-umami-event-source="hero"
+        onClick={() => umami.track('Join Testnet', { source: 'hero' })}
       >
         Join Testnet
       </HeroAction>
