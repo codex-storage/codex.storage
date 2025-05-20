@@ -102,6 +102,8 @@ const config = {
             href: 'https://github.com/codex-storage',
             position: 'right',
             className: 'header-github-link',
+            'data-umami-event': 'Github redirection',
+            'data-umami-event-source': 'navbar',
           },
           {
             label: 'Docs',
