@@ -163,6 +163,12 @@ const config = {
                 href: 'https://github.com/codex-storage',
                 label: 'Github',
               },
+              {
+                href: '/media-kit.pdf',
+                label: 'Media Kit',
+                target: '_blank',
+                rel: 'noopener noreferrer',
+              },
             ],
           },
           {
