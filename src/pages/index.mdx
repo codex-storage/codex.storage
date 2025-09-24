@@ -38,7 +38,8 @@ import Link from '@docusaurus/Link'
       <HeroAction
         href="https://discord.gg/codex-storage"
         target="_blank"
-        onClick={() => umami.track('Join Codex Discord', { source: 'hero' })}
+        onClick={ () => { if (window.location.hostname === 'codex.storage') {
+        umami.track('Join Codex Discord', { source: 'hero' }) } } }
       >
         Join Discord
       </HeroAction>
