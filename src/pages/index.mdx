@@ -29,21 +29,21 @@ import Link from '@docusaurus/Link'
 <Hero size="large" verticalAlign="center">
   <HeroInfo hideScrollToBottom>
     <HeroTitle uppercase={false}>
-      Defend Against Data Censorship.<br/>Join the Codex Testnet.
+      Defend Against Data Censorship.
     </HeroTitle>
     <HeroDescription>
-      Codex is a durable, decentralised storage protocol designed to safeguard the world's most valuable information. Join the testnet to help secure a resilient digital future.
+      Codex is a durable, decentralised storage protocol designed to safeguard the world's most valuable information.
     </HeroDescription>
     <HeroActions>
       <HeroAction
         href="https://discord.gg/codex-storage"
         target="_blank"
-        onClick={() => umami.track('Join Testnet', { source: 'hero' })}
+        onClick={ () => { if (window.location.hostname === 'codex.storage') {
+        umami.track('Join Codex Discord', { source: 'hero' }) } } }
       >
-        Join Testnet
+        Join Discord
       </HeroAction>
     </HeroActions>
-    <p className='hero-note'>Note: Codex is in Alpha testing, "There be dragons" - the purpose of this testnet is to invite the community to help us build and test Codex. Data in the testnet is vulnerable to being wiped out without notice. </p>
   </HeroInfo>
   <HeroAsset>
     <video preload="auto" autoPlay loop muted playsInline>
