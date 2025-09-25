@@ -105,10 +105,6 @@ const config = {
             'data-umami-event-source': 'navbar',
           },
           {
-            label: 'Docs',
-            href: 'https://docs.codex.storage',
-          },
-          {
             label: 'Blog',
             href: 'https://blog.codex.storage',
           },
@@ -155,10 +151,6 @@ const config = {
           },
           {
             items: [
-              {
-                href: 'https://docs.codex.storage',
-                label: 'Docs',
-              },
               {
                 href: 'https://github.com/codex-storage',
                 label: 'Github',
