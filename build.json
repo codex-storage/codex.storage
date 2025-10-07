@@ -1,15 +1,15 @@
 {
-    "timestamp": "2025-09-25T08:52:04Z",
+    "timestamp": "2025-10-07T05:53:20Z",
     "git": {
-        "commit": "2e12d81db0d920e68ed05a5642a174d0b4bb97e0",
+        "commit": "179f6996a0fc9e27cd30343d9b111003e3b0de23",
         "branch": "origin/develop",
         "url": "git@github.com:codex-storage/codex.storage.git"
     },
     "build": {
-        "id": "117",
-        "number": "117",
+        "id": "118",
+        "number": "118",
         "name": "website/dev.codex.storage",
-        "slave": "linux-02",
-        "url": "https://ci.infra.status.im/job/website/job/dev.codex.storage/117/"
+        "slave": "linux-01",
+        "url": "https://ci.infra.status.im/job/website/job/dev.codex.storage/118/"
     }
 }
